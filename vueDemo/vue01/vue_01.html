@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>111</title>
+<!--    <script src="vue.js" type="text/javascript" charset="UTF-8"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>-->
+</head>
+<body>
+
+
+<!--
+    vue中数据的单向传递：
+    把数据交给vue实例对象，实例对象将数据交给界面
+-->
+<div id="box1">
+    {{ message }}
+    <p></p>
+</div>
+
+<script>
+    // 创建一个vue实例
+    let box = new Vue({
+        // vue作用域
+        el: "#box1",
+        // 作用域的数据
+        data: {
+            message: "Hello Vue"
+        }
+    })
+</script>
+
+<!--
+    vue中数据双向绑定：
+    可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定
+-->
+<div id="box2">
+    <input type="text" v-model="text_message" placeholder="填写内容">
+    <p>Message is: {{ text_message }}</p>
+</div>
+<script>
+    let box2 = new Vue({
+        el: "#box2",
+        data: {
+            text_message: ''
+        }
+    })
+</script>
+
+</body>
+</html>
