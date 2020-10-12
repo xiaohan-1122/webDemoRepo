@@ -5,17 +5,120 @@
     <title>常用指令3</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="UTF-8"></script>
 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .b{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .c{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <button onclick="alert('哈哈哈哈哈')">我是按钮</button>
+    <div id="box1">
+        <button v-on:click="click_test1('按钮1点击')">我是按钮1</button>
+        <button @click="click_test2('按钮2点击', $event)">我是按钮2</button>
+<!--        点击按钮方法只执行一次-->
+        <button @click.once="click_test3">我是按钮3 只执行一次</button>
+<!--        阻止元素默认行为-->
+        <a href="https://www.baidu.com" @click.prevent="click_test4">百度</a>
     </div>
 
     <script>
         let vue1 = new Vue({
             el: '#box1',
             data: {
-                
+                name: 'xiaohei'
+            },
+            methods: {
+                click_test1(msg) {
+                    alert('v-on' + msg + this.name)
+                },
+                click_test2(msg, e) {
+                    alert('v-on' + msg)
+                    console.log(e);
+                },
+                click_test3() {
+                    alert('v-on按钮点击3')
+                },
+                click_test4() {
+                    alert('v-on百度a标签点击')
+                }
+            }
+        })
+    </script>
+
+    <div id="box2" class="a" @click="click_test5">
+        <!--    默认情况下，嵌套元素中，如果都监听了相同的事件，会触发事件冒泡
+        如果要阻止事件冒泡，使用stop修饰符-->
+<!--        <div class="b" @click.stop="click_test6">-->
+<!--        只有当前元素本身触发事件时，才执行回调函数-->
+        <div class="b" @click.self="click_test6">
+            <div class="c" @click="click_test7"></div>
+        </div>
+    </div>
+<!--    默认情况是事件冒泡，.capture变为事件捕获-->
+<!--    <div id="box3" class="a" @click.capture="click_test5">-->
+<!--        <div class="b" @click.capture="click_test6">-->
+<!--            <div class="c" @click.capture="click_test7"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <script>
+        let vue2 = new Vue({
+            el: '#box2',
+            // el: '#box3',
+            methods: {
+                click_test5() {
+                    console.log('v-on div a');
+                },
+                click_test6() {
+                    console.log('v-on div b');
+                },
+                click_test7() {
+                    console.log('v-on div c');
+                }
+            }
+        })
+    </script>
+
+
+    <div id="box4">
+<!--        监听键盘任意按键-->
+        <input type="text" @keyup="test1()">
+<!--        监听回车键-->
+        <input type="text" @keyup.enter="test2">
+<!--        监听F2键-->
+<!--        <input type="text" @keyup.113="test2">-->
+<!--        通过全局config.keyCodes对象自定义按键修饰符别名-->
+        <input type="text" @keyup.f2="test2">
+    </div>
+    <script>
+        Vue.config.keyCodes.f1 = 113
+        let vue3 = new Vue({
+            el: '#box4',
+            data: {
+
+            },
+            methods: {
+                test1() {
+                    alert('text1')
+                },
+                test2() {
+                    alert('text2')
+                }
             }
         })
     </script>
