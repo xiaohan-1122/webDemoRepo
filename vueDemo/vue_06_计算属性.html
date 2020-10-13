@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="UTF-8"></script>
+
+</head>
+<body>
+    <div id="box1">
+        <p>原字符串: "{{ message }}"</p>
+        <p>反转字符串: "{{ reversedMessage }}"</p>
+    </div>
+
+    <script>
+        let vue1 = new Vue({
+            el: '#box1',
+            data: {
+                message: 'abcde'
+            },
+            computed: {
+                reversedMessage: function () {
+                    return this.message.split('').reverse().join('')
+                }
+            }
+        })
+    </script>
+</body>
+</html>
