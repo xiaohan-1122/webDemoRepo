@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="UTF-8"></script>
+
+</head>
+<body>
+    <div id="box1">
+        <p v-red>测试red全局自定义指令</p>
+        <p v-blue>测试blue局部自定义指令</p>
+<!--    input被渲染出来后，就被选中-->
+        <input type="text" v-focus>
+    </div>
+
+    <script>
+        /*
+        第一个参数：指令名称
+        第二个参数：对象
+        bind:指令被绑定到元素上的时候执行
+        inserted:绑定指令的元素被添加到父元素上的时候调用
+         */
+        Vue.directive('red', {
+            bind: function (el) {
+                el.style.color = 'red';
+            }
+        });
+        let vue1 = new Vue({
+            el: '#box1',
+            directives: {
+                blue: {
+                    bind: function (el) {
+                        el.style.color = 'blue';
+                    }
+                },
+                focus: {
+                    inserted: function (el) {
+                        el.focus();
+                    }
+                }
+            }
+        })
+    </script>
+
+
+    <div id="box2">
+        <p v-color="'green'">自定义指令传参</p>
+        <p v-color="pinkColor">自定义指令传参取data数据</p>
+    </div>
+    <script>
+        let vue2 = new Vue({
+            el: '#box2',
+            data: {
+              pinkColor: 'pink'
+            },
+            directives: {
+                color: {
+                    bind: function (el, color) {
+                        el.style.color = color.value;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
