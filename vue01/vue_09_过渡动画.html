@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡动画</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="UTF-8"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .v-enter{
+            opacity: 0;
+        }
+        .v-enter-to{
+            opacity: 1;
+        }
+        .v-enter-active{
+            transition: all 3s;
+        }
+        .v-leave{
+            opacity: 1;
+        }
+        .v-leave-to{
+            opacity: 0;
+        }
+        .v-leave-active{
+            transition: all 3s;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <button @click="toggle">显示隐藏</button>
+    <transition>
+        <div id="box1" v-show="isShow"></div>
+    </transition>
+</div>
+
+<script>
+    let vue1 = new Vue({
+        el: '#app',
+        data: {
+            isShow: false
+        },
+        methods: {
+            toggle() {
+                this.isShow = !this.isShow
+            }
+        }
+    })
+</script>
+</body>
+</html>
