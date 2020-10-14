@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="UTF-8"></script>
+
 </head>
 <body>
-$END$
+    <div id="box1">
+        <p>{{name | capitalize1}}</p>
+        <p>{{name | capitalize2('naruto')}}</p>
+    </div>
+
+    <script>
+        Vue.filter('capitalize1', function (value) {
+            if (!value) return ''
+            value = value.toString()
+            // 首字母大写
+            return value.charAt(0).toUpperCase() + value.slice(1)
+        })
+        let vue1 = new Vue({
+            el: '#box1',
+            data: {
+                name: 'my name is xiaohei.'
+            },
+            filters: {
+                capitalize2: function (value, str) {
+                    if (!str) return ''
+                    str = str.toString()
+                    return str.charAt(0).toUpperCase() + str.slice(1)
+                }
+            }
+
+        })
+    </script>
+
+<!--    利用过滤器对时间进行格式化-->
+    <div id="time">
+        <p>{{time_date | dataFormart}}</p>
+    </div>
+    <script>
+        Vue.filter('dataFormart', function (value) {
+            let date = new Date(value);
+            let year = date.getFullYear() + '';
+            let month = date.getMonth() + 1 + '';
+            let day = date.getDate() + '';
+            let hour = date.getHours() + '';
+            let minute = date.getMinutes() + '';
+            let second = date.getSeconds() + '';
+            // return year + '-' + month.padStart(2, '0') + '-' + day.padStart(2, '0') + ' ' + hour.padStart(2, '0') + ':' + minute.padStart(2, '0') + ':' + second.padStart(2, '0');
+            return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '')} ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2,'0')}`
+        });
+        let vue2 = new Vue({
+            el: '#time',
+            data: {
+                time_date: 1601673785000
+            }
+        })
+    </script>
 </body>
 </html>
