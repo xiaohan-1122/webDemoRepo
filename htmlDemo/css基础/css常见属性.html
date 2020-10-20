@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css常见属性</title>
+    <style>
+        /* 
+        color: 前景色(文字颜色) 
+        font-size: 文字大小
+        background-color: 背景色
+        width: 宽度
+        height: 高度
+        */
+        .box1 {
+            color: red;    /* 中划线\边框也都是红色的 */
+            text-decoration: line-through;  /* 中划线 */
+            border-width: 10px;
+            border-style: solid;
+        }
+        .large-size {
+            font-size: 30px;
+        }
+        .bg-color {
+            background-color: seagreen;
+        }
+        .box2 {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+        }
+        /* div的outline 轮廓*/
+        div {
+            outline: 2px solid pink !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        设置前景色
+    </div>
+    <div class="large-size">
+        设置大字体
+    </div>
+    <div class="bg-color">
+        设置背景色
+    </div>
+    <br>
+    <span class="bg-color">
+        span设置背景色
+    </span>
+    <br>
+    <br>
+    <div class="box2">
+        设置宽度和高度
+    </div>
+</body>
+</html>
