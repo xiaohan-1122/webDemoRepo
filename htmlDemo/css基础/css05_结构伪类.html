@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类</title>
+    <!-- 同一级别中所有元素的顺序 -->
+    <style>
+        /* 选中同级别中第1个标签 */
+        :nth-child(1){
+            color: red;
+        }
+        /* 选中偶数 */
+        p:nth-child(2n){
+            color: green;
+        }
+        /* 选中偶数 */
+        /* p:nth-child(even){
+            color: blue;
+        } */
+        /* 选中奇数 */
+        p:nth-child(2n+1){
+            color: darkmagenta;
+        }
+        /* 选中同级别中奇数的p标签 */
+        /* p:nth-child(odd){
+            color: pink;
+        } */
+        /* 选中同级别中第3的倍数的p标签 */
+        p:nth-child(3n){
+            background-color: aquamarine;
+        }
+        /* div中的第1个标签 */
+        div>:nth-child(1){
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>段落1</p>
+        <p>段落2</p>
+        <p>段落3</p>
+        <p>段落4</p>
+        <p>段落5</p>
+        <p>段落6</p>
+    </div>
+    <p>
+        同级别第2个标签
+        <span>p中的span内容1</span>
+        <span>p中的span内容2</span>
+        <span>p中的span内容3</span>
+    </p>
+</body>
+</html>
