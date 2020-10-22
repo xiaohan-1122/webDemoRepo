@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        p{
+            width: 500px;
+            background-color: skyblue;
+        }
+        /* 选中第一个字母 */
+        p::first-letter{
+            font-size: 30px;
+        }
+        /* 选中第一行 */
+        p::first-line{
+            color: slateblue;
+        }
+        /* 被选中部分 */
+        p::selection{
+        background-color: yellow;
+        }
+        .box::before{
+            /* content: "前面添加内容"; */
+            content: url('./images/1.jpg');
+            background-color: springgreen;
+        }
+        .box::after{
+            content: "后面添加内容";
+            margin-left: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="box">
+        在6月23日外交部例行记者会上，中国外交部发言人赵立坚对此表示，这是美方赤裸裸对中方媒体政治打压的又一例证，将进一步严重干扰中国媒体在美开展正常报道活动，也进一步暴露出美方标榜的所谓“新闻和言论自由”的虚伪性。中方强烈敦促美方摒弃冷战思维和意识形态偏见，立即停止和纠正这种损人不利己的错误做法，否则中方将不得不作出必要正当反应
+    </p>
+</body>
+</html>

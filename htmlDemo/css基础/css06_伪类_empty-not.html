@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty</title>
+    <style>
+        /* 代表里面完全空白的元素 */
+        :empty{
+            width: 200px;
+            height: 30px;
+            background-color: aqua;
+        }
+    </style>
+
+    <style>
+        /* 否定伪类 */
+        /* 除了div外所有元素 */
+        body :not(div){
+            color: sienna;
+        }
+    </style>
+</head>
+<body>
+    <!-- 只会选中第一个 -->
+    <!-- <p></p> 
+    <p>我是段落</p>
+    <p>           </p> -->
+
+
+    <!-- 第一个div不会变色 -->
+    <div>否定伪类div</div>
+    <p>否定伪类p</p>
+    <span>否定伪类span</span>
+    <div><p>内容</p></div>
+</body>
+</html>
