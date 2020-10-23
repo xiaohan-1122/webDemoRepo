@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>列表元素</title>
     <style>
-
+        .dongman-ul{
+            padding: 0;
+            margin: 0;
+            /* 设置li元素前面的标记样式 用的最多的取值是none*/
+            list-style-type: none;
+        }
+        .dongman-ul li{
+            margin-top: 8px;
+        }
+        .dongman-ul li span {
+            background-color: blueviolet;
+            color: #ffffff;
+            padding: 0 5px;
+        }
+        .music{
+            margin-left: 30px;
+            /* 设置图片为li元素前面的标记，会覆盖list-style-type的设置 很少用*/
+            list-style-image: url('./images/icon.png');
+        }
+        .movie {
+            /* 设置li元素前面标记的位置，即li前面的标记要不要计算在li的内容内，可以取outside、inside两个值 较少用*/
+            list-style-position: outside;
+        }
+        /* 一般只用list-style:none */
     </style>
 </head>
 <body>
@@ -30,8 +53,33 @@
     <!-- 定义列表 -->
     <div>
         <dl>
-            <dt></dt>
+            <dt>定义列表</dt>
+            <dd>定义列表描述</dd>
+            <dt>定义列表</dt>
+            <dd>定义列表描述</dd>
         </dl>
     </div>
+    <hr>
+    <p>-------------列表相关的CSS属性-----------------</p>
+    <h2>热门动漫</h2>
+    <ul class="dongman-ul">
+        <li><span>1</span>海贼王</li>
+        <li><span>2</span>火影忍者</li>
+        <li><span>3</span>名侦探柯南</li>
+        <li><span>4</span>进击的巨人</li>
+    </ul>
+
+    <h2>热门歌曲</h2>
+    <ul class="music">
+        <li>人间城</li>
+        <li>皆可</li>
+    </ul>
+
+    <h2>热门电影</h2>
+    <ul class="movie">
+        <li>极速车神</li>
+        <li>八佰</li>
+        <li>急先锋</li>
+    </ul>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        table {
+            /* 表格边框的宽度 实线虚线 边框颜色 */
+            border: 1px solid #666;
+            /* 边框合并 */
+            border-collapse: collapse;
+            /* table居中显示 */
+            margin: 20px auto;
+        }
+        td,th{
+            border: 1px solid #666;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        [rowspan],[colspan]{
+            font-weight: 700;
+        }
+        .title{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!-- 按列合并 -->
+                <td class="title" colspan="6">课程表</td>
+            </tr>
+            <tr>
+                <th></th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- 按行合并 -->
+                <td rowspan="3">上午</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+            </tr>
+            <tr>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+            </tr>
+            <tr>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+            </tr>
+            <tr>
+                <td rowspan="3">下午</td>
+                <td>化学</td>
+                <td>化学</td>
+                <td>化学</td>
+                <td>化学</td>
+                <td>化学</td>
+            </tr>
+            <tr>
+                <td>生物</td>
+                <td>生物</td>
+                <td>生物</td>
+                <td>生物</td>
+                <td>生物</td>
+            </tr>
+            <tr>
+                <td>物理</td>
+                <td>物理</td>
+                <td>物理</td>
+                <td>物理</td>
+                <td>物理</td>
+            </tr>
+            <tr>
+                <td rowspan="2">晚自习</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>数学</td>
+            </tr>
+            <tr>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+                <td>英语</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

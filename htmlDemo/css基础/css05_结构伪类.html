@@ -30,6 +30,18 @@
         p:nth-child(3n){
             background-color: aquamarine;
         }
+        /* 选中前3个p标签 */
+        p:nth-child(-n+3){
+            background-color: greenyellow;
+        }
+        /* 选中后3个标签 */
+        p:nth-child(n+3){
+            background-color: hotpink;
+        }
+        /* 选中第2-4个标签 */
+        p:nth-child(-n+4):nth-child(n+2){
+            background-color: antiquewhite;
+        }
         /* div中的第1个标签 */
         div>:nth-child(1){
             background-color: lightblue;
