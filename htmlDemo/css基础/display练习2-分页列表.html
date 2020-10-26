@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分页</title>
+    <style>
+        /* 样式重置 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #00c;
+        }
+        /* 整体样式 */
+        .page li {
+            display: inline-block;
+        }
+        .page ul li a {
+            display: block;
+            width: 34px;
+            border: 2px solid #e1e2e3;
+            font-size: 14px;
+            text-align: center;
+            line-height: 34px;
+        }
+        .page .prev a, .page .next a {
+            width: 80px;
+        }
+        .page ul li a:hover {
+            border-color: #38f;
+            background-color: #f2f8ff;
+        }
+        .page .active {
+            width: 36px;
+            line-height: 36px;
+            border: none;
+            /* 加粗 */
+            font-weight: 700;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <ul>
+            <li class="prev"><a href="javascript:;">&lt上一页</a></li>
+            <li><a href="javascript:;">1</a></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;" class="active">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li><a href="javascript:;">6</a></li>
+            <li><a href="javascript:;">7</a></li>
+            <li><a href="javascript:;">8</a></li>
+            <li><a href="javascript:;">9</a></li>
+            <li><a href="javascript:;">10</a></li>
+            <li class="next"><a href="javascript:;">下一页&gt</a></li>
+        </ul>
+    </div>
+</body>
+</html>

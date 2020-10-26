@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按钮的实现方式</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="test_button">
+        <!-- 方式一：button -->
+        <div>
+            <!-- 普通按钮 -->
+            <button>普通按钮</button>
+            <!-- 重置按钮 -->
+            <button type="reset">重置</button>
+            <!-- 提交按钮 submit是默认值-->
+            <button type="submit">提交</button>
+        </div>
+
+        
+        <!-- 方式二：input type=button -->
+        <div>
+            <!-- 普通按钮 -->
+            <input type="button" value="普通按钮">
+            <!-- 重置按钮 -->
+            <input type="reset" value="重置">
+            <!-- 提交按钮 -->
+            <input type="submit" value="提交">
+        </div>
+
+    </form>
+
+    <!-- 模拟百度搜索框 -->
+    <div class="baidu">
+        <form action="https://www.baidu.com/s">
+            <input type="text" name="wd" placeholder="请输入内容">
+            <input type="submit" value="百度一下">
+        </form>
+    </div>
+</body>
+</html>
