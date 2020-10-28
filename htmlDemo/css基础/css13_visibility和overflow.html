@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        /* 
+            visibility属性 控制元素可见性
+            visibility: visible;     显示元素
+            visibility: hidden;      隐藏元素 占用空间（display:none不占用空间）
+
+            overflow属性   控制内容溢出时的行为
+            overflow: hidden;   溢出内容仍显示
+            overflow: visible;  溢出内容直接裁剪
+            overflow: scroll;   溢出内容被裁剪，但可以通过滚动机制查看
+            overflow: auto;     自动根据内容是否溢出，决定是否采取滚动机制
+            overflow-x overflow-y   可以分别设置x y轴（建议直接使用overflow）
+         */
+        .box {
+            background-color: gray;
+            width: 300px;
+            height: 300px;
+            /* overflow: over; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+      <div class="box">
+          <img src="./images/3.jpg" alt="">
+      </div>
+</body>
+</html>

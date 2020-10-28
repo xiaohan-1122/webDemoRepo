@@ -34,6 +34,8 @@
             border-color: #38f;
             background-color: #f2f8ff;
         }
+        /* 可以给某个需要的元素增加class 和删除class*/
+        /* 设置被选中的a标签3为文本 */
         .page .active {
             width: 36px;
             line-height: 36px;
@@ -41,6 +43,10 @@
             /* 加粗 */
             font-weight: 700;
             color: #000;
+        }
+        .page .active:hover {
+            border: none;
+            background-color: transparent;
         }
     </style>
 </head>
@@ -50,7 +56,7 @@
             <li class="prev"><a href="javascript:;">&lt上一页</a></li>
             <li><a href="javascript:;">1</a></li>
             <li><a href="javascript:;">2</a></li>
-            <li><a href="javascript:;" class="active">3</a></li>
+            <li><a class="active">3</a></li>
             <li><a href="javascript:;">4</a></li>
             <li><a href="javascript:;">5</a></li>
             <li><a href="javascript:;">6</a></li>

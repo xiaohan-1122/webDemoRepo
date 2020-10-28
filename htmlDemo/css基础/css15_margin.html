@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin外边距</title>
+    <style>
+        /* 
+        margin一般用来设置兄弟元素之间的间距
+        padding一般用来设置父子元素之间的间距
+         */
+         div {
+            width: 100px;
+            height: 100px;
+         }
+         /* 1 2上下间距为30px */
+        .box1 {
+            background-color: aqua;
+            margin-bottom: 20px;
+        }
+        .box2 {
+            background-color: firebrick;
+            margin-top: 30px;
+        }
+        
+        /* 3 4左右间隔为60px */
+        .box3 {
+            display: inline-block;
+            background-color: goldenrod;
+            margin-right: 30px;
+        }
+        .box4 {
+            display: inline-block;
+            background-color: hotpink;
+            margin-left: 30px;
+        }
+        .box {
+            /* 上右下左 */
+            margin: 10px 5px 10px 5px;
+            margin: 10px 5px;
+            margin: 10px;
+        }
+
+        /* ------------------- 上下margin的传递 ----------------------------------- */
+        /* 
+        1. margin-top的传递
+            如果块级元素的顶部线和父元素的顶部线重叠，那么这个块级元素的margin-top值会传递给父元素。
+        2. margin-bottom的传递（用的较少）
+            如果块级元素的底部线和父元素的底部线重叠，并且父元素的高度是auto，那么这个块级元素的margin-bottom值会传递给父元素。
+        3. 防止上下margin传递
+            3.1 给父元素这是padding-top或padding-bottom（很少用）
+            3.2 给父元素设置边框
+            3.3 触发BFC:设置父元素overflow: hidden;（使用这种方式）
+         */
+         .box5 {
+            background-color: green;
+        }
+        .box6 {
+            width: 200px;
+            height: 200px;
+            background-color: darkslateblue;
+            /* 去除上下margin传递 */
+            overflow: hidden;
+        }
+        .box7 {
+            background-color: red;
+            /* 距离父元素左边20px 左右margin不会传递*/
+            margin-left: 20px;  
+            /* 父元素距离上面的元素下移20px */
+            margin-top: 20px;
+        }
+        .box8 {
+            width: 200px;
+            height: auto;
+            background-color: gold;
+            /* overflow: hidden; */
+        }
+        .box9 {
+            background-color: orangered;
+            /* 父元素会与下面的元素间隔20px */
+            margin-bottom: 20px;
+        }
+
+        /* ------------------- 上下margin的折叠 ----------------------------------- */
+        /* 
+        垂直方向上相邻的2个margin（margin-top、margin-bottom）有可能会合并为1个margin，这种现象叫做collapse(折叠)
+        水平方向的margin永远不会合并
+         */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <br>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <br>
+    <br>
+    <p>---------------margin-top传递---------------------</p>
+    <div class="box5"></div>
+    <div class="box6">
+        <div class="box7"></div>
+    </div>
+    <p>---------------margin-bottom传递---------------------</p>
+    <div class="box8">
+        <div class="box9"></div>
+    </div>
+    <div class="box5"></div>
+    <p>--------------- 上下margin的折叠---------------------</p>
+    
+</body>
+</html>

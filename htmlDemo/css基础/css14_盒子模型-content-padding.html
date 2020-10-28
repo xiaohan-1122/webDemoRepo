@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+    <style>
+        /* --------------------- content ------------------------------------------- */
+        .box {
+            background-color: red;
+            /* 设置的是内容的宽度 不包含内外边距 */
+
+            /* 设置宽度 */
+            /* width: 1000px; */
+            /* 设置最小宽度 */
+            /* min-width: 1000px; */
+            /* 设置最大宽度 */
+            max-width: 1000px;
+            /* inline-block box会只包裹内容 */
+            /* display: inline-block; */
+
+            /* 设置高度 */
+            /* height: 600px; */
+            /* 设置最小高度 */
+            /* min-height: 600px; */
+            /* 最大高度 */
+            max-height: 200px;
+            overflow: scroll;
+        }
+/* --------------------- padding 内边距------------------------------------------- */
+        .box1 {
+            display: inline-block;
+            width: 500px;
+            background-color: salmon;
+            /* 设置上内边距 */
+            padding-top: 20px;
+            /* 设置右内边距 */
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            /* 上右下左 */
+            padding: 10px 5px 10px 5px;
+            /* 上下10 左右5 */
+            padding: 10px 5px;
+            /* 上右下左都是10 */
+            padding: 10px;
+        }
+/* --------------------- word-break ------------------------------------------- */
+        .box2 {
+            background-color: skyblue;
+            width: 300px;
+            /* 单词可以断开 一个单词分行显示 */
+            word-break: break-all;
+        }        
+    </style>
+</head>
+<body>
+    <div class="box">
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+            <p>aaaa</p>
+    </div>
+    <br>
+    <div class="box1">
+        朱凤莲说，我们注意到了相关报道。民进党当局与“台独”分裂势力勾连外部势力，加紧谋“独”挑衅，是造成当前台海形势复杂严峻的根源。我只重申一点，我们维护国家主权和领土完整的意志坚如磐石，绝不为任何形式的“台独”分裂活动留下任何空间。
+    </div>
+    <br>
+    <div class="box2">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+
+</body>
+</html>
