@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline</title>
+    <!-- 
+        元素的外轮廓:
+        不占空间
+        默认显示在border外面
+        应用场景：去除a元素、input元素的focus轮廓效果
+     -->
+     <style>
+         .box1 {
+             width: 100px;
+             height: 100px;
+             background-color: darkblue;
+             outline: 5px solid firebrick;
+         }
+         span {
+             background-color: antiquewhite;
+         }
+         a, input, textarea {
+             outline: none;
+         }
+     </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <br>
+    <span>span元素</span>
+    <a href="javascript:">百度一下</a>
+    <input type="text">
+</body>
+</html>

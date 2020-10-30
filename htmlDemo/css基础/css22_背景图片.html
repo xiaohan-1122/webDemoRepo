@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        /* 背景图片会盖在background-color的上面 */
+        .box1 {
+            width: 600px;
+            height: 400px;
+            background-color: darkgreen;
+            background-image: url("./images/1.jpg");
+            /* 设置多张图片时，第一张图片会显示在最上面，其他图片按顺序层叠在下面 */
+            background-image: url("./images/1.jpg"), url("./images/3.jpg");
+            /* 如果设置了背景图片后，元素没有具体的宽高，背景图片是不会显示出来的 */
+
+            /* 平铺效果 默认就是repeat*/
+            background-repeat: repeat;
+            /* 水平方向平铺 */
+            /* background-repeat: repeat-x; */
+            /* 垂直方向平铺 */
+            /* background-repeat: repeat-y; */
+            /* 不平铺 */
+            /* background-repeat: no-repeat; */
+        }
+        /* background-size */
+        .box2 {
+            margin-top: 20px;
+            width: 400px;
+            height: 200px;
+            background-color: fuchsia;
+            background-image: url("./images/1.jpg");
+            background-repeat: no-repeat;
+            /* 以背景图片本身大小显示 */
+            background-size: auto;
+            /* 拉伸图片 背景图片覆盖整个元素 */
+            /* background-size: cover; */
+            /* 对某一个方向进行图片拉伸，达到元素高度或宽度后，不再拉伸，保持图片的宽高比 */
+            /* background-size: contain; */
+            /* 背景图片显示的范围 百分比 第1个参数：水平方向  第2个参数：垂直方向*/
+            /* background-size: 80% 60%; */
+            /* 背景图片显示的范围 像素方式 */
+            background-size: 300px 100px;
+        }
+
+        /* background-position */
+        /* 设置背景图片在水平、垂直方向的具体位置 
+            水平方向取值：left、center、right
+            垂直方向取值：top、center、bottom
+            如果只设置了1个方向，另一个方向默认是center
+        */
+        .box3 {
+            margin-top: 20px;
+            width: 500px;
+            height: 300px;
+            background-color: goldenrod;
+            background-image: url("./images/1.jpg");
+            background-repeat: no-repeat;
+
+            background-position: 50px 30px;
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

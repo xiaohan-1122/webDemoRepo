@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+        .box {
+            background-color: saddlebrown;
+            width: 100px;
+            height: 100px;
+            /* 边框宽度 */
+            border-width: 5px;
+            /* 边框样式 */
+            border-style: solid;
+            /* 边框颜色 */
+            border-color: green;
+
+            /* 宽度 样式 颜色 */
+            border: 5px dashed springgreen;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            margin-left: 20px;
+            /* 设置下边框 */
+            border-bottom: 5px solid firebrick;
+        }
+        /* 梯形边框 */
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-left: 10px;
+            border-top: 20px solid rebeccapurple;
+            border-left: 20px solid springgreen;
+        }
+        .box3, .box4, .box5 {
+            width: 0;
+            height: 0;
+            margin-left: 10px;
+        }
+        /* 两个三角形 */
+        .box3 {
+            background-color: antiquewhite;
+            border-top: 100px solid hotpink;
+            border-left: 100px solid steelblue;
+        }
+        /* 四个三角形 */
+        .box4 {
+            border-width: 50px;
+            border-style: solid;
+            border-top-color: green;
+            border-right-color: red;
+            border-bottom-color: blue;
+            border-left-color: darkorange;
+        }
+        /* 向下箭头 */
+        .box5 {
+            border-width: 50px;
+            border-style: solid;
+            border-top-color: red;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+        .box6 {
+            border-top: 100px solid green;
+            border-left: 100px solid transparent;
+            transform: rotate(135deg);
+        }
+        /* 设置圆角边框 */
+        .box7 {
+            margin-left: 30px;
+            width: 100px;
+            height: 80px;
+            background-color: green;
+            border: 3px solid red;
+            /* 同时设置4个角 */
+            border-radius: 10pt;
+        }
+        /* 圆形边框 */
+        .box8 {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            border: 3px solid sienna;
+            /* 取值为宽度和高度的一半 */
+            border-radius: 50%;
+        }
+        /* 圆形 */
+        .box9 {
+            width: 100px;
+            height: 100px;
+            background-color: lawngreen;
+            /* 取值为宽度和高度的一半 有边框要加上边框的宽度*/
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+</body>
+</html>

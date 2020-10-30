@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阴影效果</title>
+    <!-- 
+        可以设置一个或多个阴影
+        <shadow> = inset? && <lenght>{2,4} && <color>
+            第1个<lenght>:水平方向的偏移，正数往右偏移
+            第2个<lenght>:垂直方向的偏移，正数往下偏移
+            第3个<lenght>:模糊半径
+            第4个<lenght>:延伸距离
+            <color>:阴影的颜色，如果没有设置，跟随color属性的颜色
+            inset:外框阴影变成内框阴影    
+     -->
+    <style>
+        div {
+            display: inline-block;
+            margin-left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background-color: aqua;
+            /* 默认阴影颜色为黑色 */
+            box-shadow: 5px 5px;
+        }
+        .box2 {
+            background-color: saddlebrown;
+            box-shadow: 5px -5px firebrick;
+        }
+        .box3 {
+            background-color: aqua;
+            /* 第三个参数表示阴影模糊效果 0表示没有模糊 可以做毛玻璃效果 */
+            box-shadow: 5px 5px 3px;
+        }
+        .box4 {
+            background-color: firebrick;
+            /* 第四个参数，正数表示向外延伸，负数表示向内延伸 */
+            box-shadow: 5px 5px 2px 2px;
+        }
+        .box5 {
+            background-color: forestgreen;
+            box-shadow: inset 5px 5px 2px 2px;
+        }
+
+        /* 三面阴影练习 */
+        body {
+            background-color: #f5f5f5;
+        }
+        .box7 {
+            background-color: #fff;
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+            box-shadow: 0 10px 5px 5px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+</body>
+</html>

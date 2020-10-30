@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字阴影text-shadow</title>
+<!-- 
+    text-shadow用法类似于box-shadow,用于给文字添加阴影效果
+    text-shadow同样适用于::first-line、::first-letter
+ -->
+    <style>
+        .box {
+            font-size: 25px;
+            font-weight: 700;
+            color: red;
+            /* text-shadow: 5px 5px 5px; */
+            /* text-shadow: 5px 5px 5px forestgreen; */
+            text-shadow: 5px 5px 5px forestgreen,
+                         -5px 5px 5px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        新疆喀什第二次全员核酸检测14人呈阳性
+    </div>
+</body>
+</html>
