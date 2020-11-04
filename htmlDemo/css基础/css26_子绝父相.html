@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相</title>
+    <link rel="stylesheet" href="./css_reset.css">
+    <style>
+        /* 
+        绝大多数情况下，子元素的绝对定位都是相对于父元素进行定位
+        如果希望子元素相对父元素进行定位，又不希望父元素脱标，常用解决方案：
+        父元素设置position:relative(让父元素成为定位元素，而且父元素不脱离标准流),子元素设置position:absolute，简称“子绝父相”
+        */
+        .box {
+            display: inline-block;
+            position: relative;
+        }
+        .box ul {
+            position: absolute;
+            bottom: 20px;
+            width: 285px;
+            /* 子元素宽度等分 */
+            text-align: justify;
+            text-align-last: justify;
+            /* 居中显示 */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .box ul li {
+            display: inline-block;
+
+        }
+        .box ul a {
+            background-color: #fff;
+            color: #333;
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 10px;
+            text-align: center;
+            text-align-last:center;
+            font-size: 12px;
+            border: 1px solid #eaeaea;
+            border-radius: 40px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+        }
+        .box ul a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box">
+        <a href="#">
+            <img src="./images/kaola.jpg" alt="">
+        </a>
+        <ul>
+            <li><a href="javascript:">男运动鞋</a></li>
+            <li><a href="javascript:">女运动鞋</a></li>
+            <li><a href="javascript:">运动服饰</a></li>
+            <li><a href="javascript:">速干T恤</a></li>
+            <li><a href="javascript:">健身服饰</a></li>
+            <li><a href="javascript:">户外背包</a></li>
+        </ul>
+    </div>
+</body>
+</html>

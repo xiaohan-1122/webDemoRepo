@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        /*
+        元素的层叠 
+        1.父子关系
+            子元素会层叠在父元素上
+        2.非父子关系
+            都是非定位元素：在标准流中一般不存在层叠现象
+            1个是定位元素1个是非定位元素：定位元素会层叠在非定位元素上面
+            都是定位元素：使用CSS属性z-index来控制层叠顺序,默认后面会盖住前面的
+        */
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: seagreen;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+        .box2 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: sienna;
+        }
+        span {
+            position: relative;
+            background-color: gold;
+            /* span会层叠在box2上面 */
+            left: 100px;
+            /* 使span盖住strong */
+            z-index: 9;
+        }
+        strong {
+            position: relative;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+
+    
+    <span>哈z哈哈哈</span>
+    <strong>strong元素</strong>
+    <div class="box2"></div>
+    
+</body>
+</html>

@@ -4,10 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>精灵图</title>
+    <style>
+        /* 多个div公共的样式 只需要添加wrap这个class即可 */
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .nav {
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+        }
+        .right {
+            float: right;
+        }
+    </style>
+    <!-- 京东多快好省练习 -->
+    <style>
+        /* reset css */
+        html, body, div, p, ul h5{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        li, p, h5{
+            display: inline-block;
+        }
+        .service .list li{
+            line-height: 42px;
+            margin-left: 10px;
+            margin-right: 18px;
+        }
+        .service .list li p{
+            font-size: 18px;
+            color: #444;
+            font-weight: 700;
+        }
+        .service .list li h5 {
+            width: 36px;
+            height: 42px;
+            /* h5中的文字设置较大缩进，就看不到了 */
+            text-indent: -999px;
+            background-image: url("./images/jd.png");
+            background-position: 0 -192px;
+        }
+        .service li:nth-child(2) h5 {
+            background-position: -41px -192px;
+        }
+        .service li:nth-child(3) h5 {
+            background-position: -82px -192px;
+        }
+        .service li:nth-child(4) h5 {
+            background-position: -123px -192px;
+        }
+    </style>
 </head>
 <body>
     <!-- 
         将各种小图片合成到一张图片上，然后利用CSS的背景定位来显示对应的图片部分
      -->
+     <div class="nav wrap">
+         <div class="left">左边的内容</div>
+         <div class="right">右边的内容</div>
+     </div>
+     <div class="header wrap"></div>
+     <div class="footer wrap"></div>
+
+     <!-- 京东多快好省练习 -->
+     <div class="service wrap">
+         <ul class="list">
+             <li>
+                 <!-- 多快好省文本为了SEO优化 -->
+                 <h5>多</h5>
+                 <p>品类齐全，轻松购物</p>
+             </li>
+             <li>
+                 <h5>快</h5>
+                 <p>多仓直发，极速配送</p>
+             </li>
+             <li>
+                 <h5>好</h5>
+                 <p>正品行货，精致服务</p>
+             </li>
+             <li>
+                 <h5>省</h5>
+                 <p>天天低价，精选无忧</p>
+             </li>
+         </ul>
+     </div>
+
 </body>
 </html>

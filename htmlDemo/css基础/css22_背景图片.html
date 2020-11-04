@@ -61,11 +61,41 @@
             background-position: 50px 30px;
             background-position: right bottom;
         }
+        /* 背景居中 调整浏览器窗口大小 仍可保持背景图片居中显示 */
+        .box4 {
+            height: 400px;
+            min-width: 1000px;
+            background-image: url("./images/xyq.jpg");
+            background-position: center -81px;
+
+        }
+        /* background缩写
+            image position/size repeat attachment color
+            background-size可以省略，/background-size必须紧跟在background-position后面
+            其他属性都可以省略，而且顺序任意
+         */
+         .box5 {
+             background: url("./images/1.jpg") center center/150px 250px no-repeat red;
+         }
+
+         /* 
+         background-image和img区别
+         1.background-image不占空间
+         2.img浏览器右键可以直接查看地址,background-image不可以
+         3.img不支持CSS Sprite
+         4.img优先加载，background-image等加载完HTML元素后再加载
+
+         background-image和img选择
+         1.img作为网页内容的重要组成部分，比如广告图片、logo、文章配图、产品图片
+         2.background-image可有可无
+         */
+         
     </style>
 </head>
 <body>
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
+    <div class="box4"></div>
 </body>
 </html>

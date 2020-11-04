@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位练习</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 12px;
+            text-align: center;
+        }
+        .right-aside {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            border: 1px solid #eaeaea;
+        }
+        .right-aside a {
+            display: block;
+            width: 62px;
+            height: 48px;
+            border-bottom: 1px solid #eaeaea;
+            padding-top: 12px;
+        }
+        .right-aside .top {
+            border-bottom: none;
+        }
+        .right-aside a i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto 3px;
+        }
+        .right-aside a:nth-child(1) i {
+            background-image: url("./images/签到1.png");
+        }
+        .right-aside a:nth-child(2) i {
+            background-image: url("./images/购物车1.png");
+        }
+        .right-aside a:nth-child(3) i {
+            background-image: url("./images/app1.png");
+        }
+        .right-aside a:nth-child(4) i {
+            background-image: url("./images/top1.png");
+        }
+        /* 鼠标放上去之后换背景图片 */
+        .right-aside a:nth-child(1):hover i{
+            background-image: url("./images/签到2.png");
+        }
+        .right-aside a:nth-child(2):hover i{
+            background-image: url("./images/购物车2.png");
+        }
+        .right-aside a:nth-child(3):hover i{
+            background-image: url("./images/app2.png");
+        }
+        .right-aside a:nth-child(4):hover i{
+            background-image: url("./images/top2.png");
+        }
+        .test {
+            height: 50px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="right-aside">
+        <a href="javascript:">
+            <i></i>
+            <span>签到</span>
+        </a>
+        <a href="javascript:">
+            <i></i>
+            <span>购物车</span>
+        </a>
+        <a href="javascript:">
+            <i></i>
+            <span>APP</span>
+        </a>
+        <a href="javascript:" class="top">
+            <i></i>
+            <span>TOP</span>
+        </a>
+    </div>
+    <div class="test">saassa</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

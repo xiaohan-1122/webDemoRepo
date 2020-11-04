@@ -7,9 +7,16 @@ html, body, ul {
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 input, textarea{
     outline: none;
 }
 textarea {
     resize: none;
+}
+img {
+    vertical-align: middle;
 }

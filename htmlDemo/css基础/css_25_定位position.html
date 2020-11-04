@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位position</title>
+    <style>
+        /* 
+        position属性取值
+        static:     静态定位 默认
+        relative:   相对定位 相对自己原来的位置
+        absolute:   绝对定位
+        fixed:      固定定位    
+         */
+
+         /* 
+         static：元素按照标准流布局，left、right、top、bottom没有任何作用； 
+         relative：元素按照标准流布局，可以通过left、right、top、bottom进行定位，定位参照对象是元素自己原来的位置
+         fixed: 元素脱离标准流（不占空间），可以通过left、right、top、bottom进行定位，定位参照对象是视口(viewport),  当画布滚动时，固定不动
+         absolute: 元素脱离标准流，可以通过left、right、top、bottom进行定位,定位参照对象是最邻近的定位祖先元素（position值不是static），如果找不到这样的祖先元素，参照对象是视口
+         */
+
+         .box {
+             background-color: saddlebrown;
+         }
+         /* 相对定位练习 */
+         .a-relative {
+             position: relative;
+             left: 20px;
+         }
+         /* 固定定位练习 */
+         .a-fixed {
+             position: fixed;
+             /* a元素设置到右上角 */
+             top: 20px;
+             right: 20px;
+         }
+         /* 绝对定位练习 */
+        .box1 {
+            width: 500px;
+            height: 500px;
+            background-color: firebrick;
+            /* position: relative; */
+        }
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+            position: relative;
+        }
+        .a-absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <span>span元素</span>
+    <strong>strong元素</strong>
+    <img src="./images/1.jpg" alt="">
+    <div class="box">div元素</div>
+    <a href="javascript:" class="a-relative">a元素</a>
+    <i>i元素</i>
+    <br>
+    <a href="javascript:" class="a-fixed">a元素</a>
+    <i>i元素</i>
+    <br>
+    <div class="box1">
+        <div class="box2">
+            <a href="javascript:" class="a-absolute">a元素</a>
+        </div>
+    </div>
+</body>
+</html>

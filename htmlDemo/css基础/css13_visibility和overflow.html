@@ -11,10 +11,11 @@
             visibility: hidden;      隐藏元素 占用空间（display:none不占用空间）
 
             overflow属性   控制内容溢出时的行为
-            overflow: hidden;   溢出内容仍显示
-            overflow: visible;  溢出内容直接裁剪
+            overflow: hidden;   溢出内容会被修剪
+            overflow: visible;  默认值。溢出内容不会被修剪，会呈现在元素框之外
             overflow: scroll;   溢出内容被裁剪，但可以通过滚动机制查看
             overflow: auto;     自动根据内容是否溢出，决定是否采取滚动机制
+            overflow: inherit;  规定从父元素继承overflow属性的值
             overflow-x overflow-y   可以分别设置x y轴（建议直接使用overflow）
          */
         .box {

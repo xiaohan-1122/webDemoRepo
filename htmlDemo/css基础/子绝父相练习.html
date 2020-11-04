@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相练习-下拉二维码</title>
+    <link rel="stylesheet" href="./css_reset.css">
+    <style>
+        body {
+            /* 1.5表示12*1.5 = 行高18px */
+            font-family: 12px/1.5 Helvetica, Neue, Arial;
+        }
+        .box {
+            position: relative;
+            margin-left: 100px;
+        }
+        .box .code {
+            /* 默认不显示 */
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            transform: translate(-50%);
+            margin-left: 50%;
+            padding: 5px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+
+        }
+        .box .code span {
+            display: block;
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        /* 显示和消失 */
+        .box>span:hover+.code {
+            display: inline;
+        }
+        /* 向上箭头 */
+        .arrow {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 6px;
+            height: 6px;
+            background-color: #fff;
+
+            border-top: 1px solid #aaa;
+            border-left: 1px solid #aaa;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:" class="box">
+        <span>手机考拉</span>
+        <span class="code">
+            <span class="arrow"></span>
+            <img src="./images/二维码.png" alt="">
+            <span>下载APP</span>
+            <span>领1000元新人礼包</span>
+        </span>
+    </a>
+
+    
+</body>
+</html>

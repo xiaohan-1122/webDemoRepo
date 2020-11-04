@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        sub, sup {
+            font-size: 14px;
+        }
+        sub {
+            position: relative;
+            bottom: 5px;
+        }
+        /*
+        图片太长显示不全，希望显示中间部分： 
+        图片向左移动的距离 = (图片宽度 - div宽度) * 0.5 = 向左移图片的一半 + 向右移div的一半
+         */
+        .box { 
+            min-width: 1000px;
+            overflow: hidden;     
+        }
+        .box img {
+            position: relative;
+            /* 向左移动img一半 */
+            /* left: -960px; */
+            /* 相对自己的50% */
+            transform: translate(-50%);
+            /* 向右移动父元素一半 */
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>请计算n<sub>1</sub>+n<sub>2</sub>+n<sup>2</sup>的值</h1>
+
+    <div class="box">
+        <img src="./images/xyq.jpg" alt="">
+    </div>
+</body>
+</html>
