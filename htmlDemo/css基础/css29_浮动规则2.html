@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        /* 
+        浮动元素不能与行内级内容层叠，行内级内容会被浮动元素推出
+        比如：行内级元素、inline-block元素、行内级元素的内容
+         */
+         .box {
+              height: 200px;
+              background-color: darkkhaki;
+          }
+          .inner {
+              display: inline-block;
+
+              width: 100px;
+              height: 100px;
+              background-color: tomato;
+          }
+          strong {
+              float: left;
+
+              background-color: antiquewhite;
+          }
+          a {
+              background-color: rebeccapurple;
+          }
+          .box2 {
+              background-color: aquamarine;
+              width: 300px;
+          }
+          .box2 img {
+              float: left;
+          }
+    </style>
+</head>
+<body>
+    <div class="box">
+        div元素的文本
+        <div class="inner"></div>
+        <span>span元素</span>
+        <strong>strong元素</strong>
+        <a href="javascript:">a元素</a>
+    </div>
+
+    <br>
+    <br>
+    <div class="box2">
+        <img src="./images/1.jpg" alt="">
+        美国有线电视新闻网（CNN）报道，拜登在讲话中表示，
+        参加此次大选投票的美国民众比以往任何时刻都多，有超过1.5亿人参与投票。“这里，由人民统治，权力不能被剥夺。它来自人民。”“正是他们的意志决定了谁将成为美国总统，而且这只由其意志决定。”
+        “现在经过漫长的一夜计票，很明显，我们正赢得足够多的州来获得胜选所需的270张选举人票。我到这里来并不是宣布我们已经胜选，我是想说，当计票结束，我们相信我们将是赢家。”他还补充说.
+    </div>
+</body>
+</html>

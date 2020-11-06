@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动规则4</title>
+    <style>
+        /* 浮动元素之间不能层叠
+        如果一个元素浮动，另一个浮动元素已经在那个位置了，后浮动的元素将紧贴着前一个浮动元素（左浮找左浮，右浮找右浮）
+         */
+        .box {
+            width: 1000px;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+        .inner1 {
+            float: left;
+
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .inner2 {
+            float: left;
+
+            width: 150px;
+            height: 150px;
+            background-color: gold;
+        }
+        .inner3 {
+            float: left;
+            
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+        <div class="inner3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 990px;
+            margin: 0 auto;
+            background-color: cadetblue;
+        }
+        .item {
+            float: left;
+            width: 240px;
+            margin-right: 10px;
+        }
+        .wrap {
+            margin-right: -10px;
+        }
+        .itema {
+            height: 306px;
+            background-color: burlywood;
+        }
+ 
+        .itemb {
+            height: 148px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+
+        }
+        .itemb .title {
+            height: 30px;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        .itemb .image {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .itemb strong {
+            font-weight: 700;
+        }
+        .itemb span {
+            color: #747070;
+            font-size: 12px;
+        }
+        .itemb .image img {
+            /* margin-right: 8px; */
+        }
+
+        /* 给需要清除浮动的元素增加 claer-fix类 */
+        .clear-fix::after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;      /*兼容旧浏览器*/
+            visibility: hidden; /*兼容旧浏览器*/
+        }
+        .clear-fix {
+            *zoom: 1;   /*兼容旧浏览器*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container clear-fix">
+        <div class="wrap">
+            <div class="item itema"></div>
+            <div class="item itema"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb"></div>
+        </div>
+    </div>
+    <div>其他内容</div>
+    <div>其他内容</div>
+    <div>其他内容</div>
+    <div>其他内容</div>
+    <div>其他内容</div>
+</body>
+</html>

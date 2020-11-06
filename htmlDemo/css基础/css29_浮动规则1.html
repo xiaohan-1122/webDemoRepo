@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        /* 
+        可以通过float属性让元素产生浮动效果，float的常用取值：
+        none：不浮动，默认值
+        left：向左浮动
+        right：向右浮动
+         */
+         /* 
+         浮动规则一：
+         元素一旦浮动后：
+         1.脱离标准流
+         2.朝着向左或向右方向移动，直到自己的边界紧贴着包含块（一般是父元素）或者其他浮动元素的边界为止
+          */
+          .box {
+              height: 200px;
+              background-color: darkkhaki;
+          }
+          strong {
+              float: left;
+              background-color: antiquewhite;
+          }
+          a {
+              float: left;
+
+              background-color: rebeccapurple;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>span元素</span>
+        <strong>strong元素</strong>
+        <a href="javascript:">a元素</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动练习</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 990px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+        .item {
+            float: left;
+            width: 240px;
+            margin-right: 10px;
+        }
+        .wrap {
+            margin-right: -10px;
+            height: 240px;
+        }
+        .itema {
+            height: 306px;
+        }
+        .itema:nth-child(1) {
+            /* background-image: url("./images/dc96b7c0ccefe95a.jpg!cc_290x370.webp"); */
+            background: url("./images/dc96b7c0ccefe95a.jpg!cc_290x370.webp") center/cover;
+        }
+        .itema:nth-child(2) {
+            background: url("./images/5a43f546fc33bf7a.jpg!cc_290x370.webp") center/cover;
+        }
+        .itemb {
+            height: 148px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+
+        }
+        .itemb .title {
+            height: 30px;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        .itemb .image {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .itemb strong {
+            font-weight: 700;
+        }
+        .itemb span {
+            color: #747070;
+            font-size: 12px;
+        }
+        .itemb .image img {
+            /* margin-right: 8px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="item itema"></div>
+            <div class="item itema"></div>
+            <div class="item itemb">
+                <div class="title">
+                    <strong>企业好店</strong>
+                    <span>企业用户都在逛</span>
+                </div>
+                <div class="image">
+                    <img src="./images/469356c826d4317f.jpg!cc_100x100.webp" alt="">
+                    <img src="./images/c7c365f90183c78e.jpg!cc_100x100.webp" alt="">
+                </div>
+            </div>
+            <div class="item itemb">
+                <div class="title">
+                    <strong>新机首发</strong>
+                    <span>有新机更有范</span>
+                </div>
+                <div class="image">
+                    <img src="./images/03c61414d8b2ca34.jpg!cc_100x100.webp" alt="">
+                    <img src="./images/195e6c5ca3b7b785.jpg!cc_100x100.webp" alt="">
+                </div>
+            </div>
+            <div class="item itemb">
+                <div class="title">
+                    <strong>生鲜馆</strong>
+                    <span>尝遍天下鲜</span>
+                </div>
+                <div class="image">
+                    <img src="./images/5cde7655N7ac9ae10.jpg!cc_100x100.webp" alt="">
+                    <img src="./images/5b28b2e4Necc55ac2.jpg!cc_100x100.webp" alt="">
+                </div>
+            </div>
+            <div class="item itemb">
+                <div class="title">
+                    <strong>个护清洁馆</strong>
+                    <span>欢洗四季洁净生活</span>
+                </div>
+                <div class="image">
+                    <img src="./images/163522f31544f909.jpg!cc_100x100.webp" alt="">
+                    <img src="./images/0e8eadf4c2f74f78.jpg!cc_100x100.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
