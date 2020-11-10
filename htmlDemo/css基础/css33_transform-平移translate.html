@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        /* 
+        对元素进行旋转、缩放、倾斜、平移
+        平移：translate(x,y)
+        缩放：scale(x,y)
+        旋转：rotate(deg)
+        倾斜：skew(deg,deg)
+         */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 20px;
+        }
+        /* 
+         平移：translate(x,y)
+         值个数：
+            1个值：设置x轴的位移
+            2个值：设置x轴和y轴的位移
+         值类型：
+            数字：10px
+            百分比: 参照元素本身
+          */
+        .translate:hover {
+            /* transform: translate(20px); */
+            /* transform: translate(20px, 30px); */
+            transform: translate(50%)
+        }
+        /* 
+        缩放: scale(x,y)
+        值个数：
+            1个值：x轴上的缩放
+            2个值：x轴和y轴上的缩放
+        值类型：
+            数字：
+                1：保持不变
+                2：放大一倍
+                0.5：缩小一半
+            百分比：不支持百分比
+         */
+        .scale:hover {
+            transform: scale(2,0.8);
+
+            /* 
+            transform-origin：变形的原点
+            一个值：设置x轴的原点
+            两个值：设置x轴和y轴的原点
+            必须要<lenght>,<precentage>,或者left,center,right,top,bottom关键字中的一个
+                lenght:从左上角开始计算
+                百分比：参考元素本身
+            */
+            /* 以右上角为原点缩放 */
+            transform-origin: right top;
+        }
+
+        /* 
+        旋转：rotate(deg)
+        参数：旋转的角度
+            正数：顺时针
+            负数：逆时针
+        旋转原点受transform-origin的影响
+         */
+         .rotate:hover {
+             transform: rotate(45deg);
+             transform-origin: right bottom;
+         }
+
+         /* 
+         倾斜：skew(x,y)
+         一个值：表示x轴的倾斜
+         两个值：表示x轴和y轴的倾斜
+         值类型：
+            deg：旋转的角度
+            正数为顺时针，负数为逆时针
+         旋转原点受transform-origin的影响
+          */
+          .skew:hover {
+            /* transform: skew(20deg); */
+            transform: skew(0, 20deg);
+          }
+    </style>
+</head>
+<body>
+    <div class="box translate"></div>
+    <div class="box scale"></div>
+    <div class="box rotate"></div>
+    <div class="box skew"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡动画</title>
+    <style>
+        /* 
+        transition CSS属性是transtion-property,transtions-duction,transtions-timing-function,transtions-delay的一个简写属性。
+        transtion-property：指定应用过渡属性的名称
+                            可以写all表示所有可动画属性
+                            属性是否支持动画查看文档
+        transtions-duction：指定过渡动画所需的时间，单位秒(s)或毫秒(ms)
+        transtions-timing-function:指定动画的变化曲线
+        transtions-delay:过渡动画执行之前的等待时间
+         */
+         .box {
+             width: 100px;
+             height: 100px;
+             background-color: antiquewhite;
+             margin: 100px auto 0;
+
+             /* transition: width 1s linear 1s; */
+             transition: all 300ms linear;
+         }
+         .box:hover {
+             /* width: 200px;
+             height: 200px; */
+             transform: rotate(180deg)
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
