@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* 广告相关样式 */
+.ad{
+    overflow: hidden;
+    min-width: 1100px;
+}
+.ad img {
+    /* 图片居中显示 */
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+/* 导航相关样式 */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #000000;
+}
+.nav .nav-left .welcome {
+    float: left;
+}
+
+.nav .nav-left .account a{
+    /* float: left; */
+    color: #999999;
+}
