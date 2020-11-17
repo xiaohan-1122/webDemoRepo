@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+.tabbar {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.tabbar .category {
+    position: relative;
+    float: left;
+    width: 164px;
+    color: #ffffff;
+    font-size: 15px;
+    /* 背景颜色渐变 */
+    background: linear-gradient(90deg, red, #ff3264);
+}
+
+.tabbar .category .categories {
+    position: absolute;
+    z-index: 999;
+
+    width: 164px;
+    /* 背景颜色渐变 */
+    background: linear-gradient(90deg, red, #ff3264);
+}
+
+/* 三个横线组成的图标 */
+.tabbar .category .line-icon {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.tabbar .category .line-icon i {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 3px;
+}
+
+.tabbar .line-icon .first-line {
+    margin-top: 0;
+}
+
+.tabbar .category span {
+    margin-left: 30px;
+}
+
+.tabbar .category .categories li {
+    height: 42px;
+    padding: 0 3px 0 2px;
+}
+
+.tabbar .categories li a {
+    display: block;
+    height: 41px;
+    line-height: 41px;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+
+.tabbar .categories li a:hover {
+    background-color: #fff;
+    color: #ff1e32;
+}
+
+.tabbar .category li img {
+    position: relative;
+    top: -2px;
+    margin-left: 18px;
+}
+
+.tabbar .category li img.active {
+    display: none;
+}
+
+.tabbar .categories li a:hover img {
+    display: none;
+}
+
+.tabbar .categories li a:hover img.active {
+    display: inline;
+}
+
+/* 菜单 */
+.tabbar .list {
+    float: left;
+    margin-left: 18px;
+}
+
+.tabbar .list li {
+    float: left;
+    margin-left: 10px;
+}
+
+.tabbar .list a {
+    font-style: 15px;
+    font-weight: 700;
+    padding: 0 12px;
+}
+
+.tabbar .list a:hover {
+    color: #ff1e32;
+}
+/* 在对应页面 tabbar中的标签 增加active类 */
+.tabbar .list a.active {
+    color: #ff1e32;
+}
+
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+/* 轮播图片位置 */
+.banner .swiper img {
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    /* 设置z-index后，不能撑起a元素 去毛玻璃上的ul设置 */
+    /* z-index: -9;     */
+}
+
+.banner .swiper .control {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+    height: 68px;
+}
+
+.banner .swiper:hover .control {
+    display: block;
+}
+
+.banner .swiper .control i {
+    width: 34px;
+    height: 68px;
+    background-image: url("../images/kl-sprite-01.png");
+}
+
+.banner .swiper .control .prev {
+    float: left;
+    background-position: -625px -68px;
+    margin-left: 174px;
+}
+
+.banner .swiper .control .next {
+    float: right;
+    background-position: -670px -67px;
+}
+
+.banner .swiper .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+}
+
+.banner .swiper .dots .dot {
+    position: absolute;
+    bottom: 5px;
+    left: 180px;
+}
+
+.banner .swiper .dots i {
+    width: 9px;
+    height: 9px;
+    float: left;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.banner .swiper .dots i:hover {
+    background-color: #ff3264;
+}
+
+.banner .swiper .dots i.active {
+    background-color: #ff3264;
+}
+/* 轮播图下面毛玻璃效果 */
+.banner .service {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    /* 透明效果 */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    overflow: hidden;
+}
+
+/* 毛玻璃效果 */
+.banner .service .blur {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../images/banner.png") center bottom;
+    filter: blur(8px);
+}
+
+.banner .service ul {
+    position: relative;
+    z-index: 1;
+    height: 45px;
+    line-height: 45px;
+}
+
+.banner .service li {
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 30px;
+}

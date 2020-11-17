@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.main .brand .left{
+    float: left;
+    width: 220px;
+    height: 355px;
+    background-color: greenyellow;
+}
+
+.main .brand .list {
+    width: 880px;
+    float: left;
+    height: 354px;
+    border-top: 1px solid #eaeaea;
+}
+
+.main .brand li {
+    float: left;
+    width: 219px;
+    height: 176px;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
