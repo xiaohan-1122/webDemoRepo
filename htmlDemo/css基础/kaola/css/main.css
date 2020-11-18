@@ -2,9 +2,41 @@
 
 .main .brand .left{
     float: left;
-    width: 220px;
-    height: 355px;
-    background-color: greenyellow;
+    width: 219px;
+    height: 354px;
+    border-right: 1px solid #eaeaea;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.main .brand .left img {
+    width: 219px;
+    height: 219px;
+}
+
+.main .brand .left .progress {
+    height: 3px;
+    width: 30%;
+    background-color: #ff1e32;
+}
+
+.main .brand .left span {
+    display: block;
+}
+
+.main .brand .left .info {
+    color: #fff;
+}
+
+.main .brand .left .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.main .brand .left .desc {
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 .main .brand .list {
@@ -15,9 +47,83 @@
 }
 
 .main .brand li {
+    position: relative;
     float: left;
     width: 219px;
     height: 176px;
     border-right: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    background-color: #fff;
+}
+
+.main .brand li img {
+    margin-top: 12px;
+    transition: transform 0.5s ease-in;
+    transform-origin: center 0;
+}
+
+.main .brand li .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.main .brand li:hover .active{
+    opacity: 1;
+}
+
+.main .brand li:hover .desc {
+    display: none;
+}
+
+.main .brand li:hover img {
+    transform: scale(0.66);
+}
+
+.main .brand li .active {
+    /* 默认隐藏 */
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    transition: opacity 0.5s ease-in;
+}
+
+.main .brand li .focus {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 52px;
+    line-height: 20px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    color: #999;
+}
+
+
+.main .brand li .info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.main .brand li .info a {
+    display: inline-block;
+    width: 76px;
+    /* height: 32px; */
+    line-height: 32px;
+    margin-top: 5px;
+    border: 2px solid #ff1e32;
+    border-radius:18px;
+    font-size: 14px;
+    color: #ff1e32;
 }
