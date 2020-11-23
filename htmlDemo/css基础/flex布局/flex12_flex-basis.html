@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        /* 
+        flex-basis用来设置 flex items在 main axis方向上的base size
+        取值：auto（默认值）、具体的宽度数值
+
+        决定flex items最终base size的因素，从优先级高到低：
+            max-width\max-height\min-width\min-height
+            flex-basis
+            width\height
+            内容本身的size
+         */
+         .box {
+            width: 550px;
+            height: 200px;
+            background-color: goldenrod;
+            margin: 0 auto;
+
+            display: flex;                        
+         }
+         .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+            font-size: 30px;
+
+            flex-basis: auto;
+        }
+        .item2 {
+            background-color: hotpink;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

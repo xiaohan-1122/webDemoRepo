@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <style>
+        /* 
+        justify-content决定了flex items在main axis上的对齐方式
+        1.flex-start(默认值):与main start对齐
+        2.flex-end:与main end对齐
+        3.center：居中对齐
+        4.space-between：flex items之间距离相等，与main start、main end两端对齐
+        5.space-evenly：flex items之间的距离相等，flex items与main start、main end之间的距离等于flex items之间的距离
+        6.space-around：flex items之间的距离相等，flex items与main start、main end之间的距离是flex items之间距离的一半
+         */
+         .box {
+            width: 500px;
+            height: 400px;
+            background-color: goldenrod;
+
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-around;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+        }
+        .item2 {
+            background-color: hotpink;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

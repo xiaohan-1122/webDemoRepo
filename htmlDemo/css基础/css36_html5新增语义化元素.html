@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5新增语义化元素</title>
+    <style>
+        video {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+    
+    <!-- 导航 -->
+    <nav></nav>
+
+    <!-- 区域划分 -->
+    <section>
+        <!-- 内容 -->
+        <article></article>
+    </section>
+
+    <!-- 侧边栏 -->
+    <aside></aside>
+
+    <!-- 尾部 -->
+    <footer></footer>
+
+    <!-- 
+        video视频标签
+        src：资源地址
+        controls:控制栏
+        autoplay：自动播放，兼容性存在问题
+        muted：静音，增加muted后，自动播放会生效
+        loop：循环播放
+    -->
+    <video src="https://vt1.doubanio.com/202011190903/338e53119448ccdd1f7d042c39cc604e/view/movie/M/402670990.mp4" controls muted autoplay></video>
+    <!-- 可以通过source设置多个不同格式的视频资源 -->
+    <video controls>
+        <source src="https://vt1.doubanio.com/202011190903/338e53119448ccdd1f7d042c39cc604e/view/movie/M/402670990.mp4">
+        <source src="https://vt1.doubanio.com/202011190903/338e53119448ccdd1f7d042c39cc604e/view/movie/M/402670990.mp4">
+    </video>
+
+    <!-- 
+        audio音频标签
+        src：资源地址
+        controls:控制栏
+        autoplay：自动播放，兼容性存在问题
+        muted：静音
+        loop：循环播放
+     -->
+     <audio src="https://webfs.yun.kugou.com/202011190941/1b48fa5480cc5b3960f2b5cd89ce9fbf/G242/M0B/19/01/0pQEAF-uEP-AeJ6kACCHlxGBC4w276.mp3" controls></audio>
+</body>
+</html>

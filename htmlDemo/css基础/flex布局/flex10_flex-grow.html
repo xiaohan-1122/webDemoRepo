@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        /* 
+        flex-glow决定了flex items如何扩展
+        可以设置任意非负数字（正小数、正整数、0），默认值是0
+        当flex container在main axis方向上有剩余size时，flex-grow属性才会生效
+        如果所有flex items的flex-grow总和sum 大于1，每个flex items扩展的size为flex container的剩余size * flex-grow / sum（按flex-grow比例分）
+        如果所有flex items的flex-grow总和sum 小于1，每个flex items扩展的size为flex container的剩余size * flex-grow（按flex-grow比例分）
+
+        flex items扩展后的最终size不能超过max-width\max-height
+         */
+        .box {
+            width: 500px;
+            height: 200px;
+            background-color: goldenrod;
+            margin: 0 auto;
+
+            display: flex;     
+               
+         }
+         .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+            font-size: 30px;
+            flex-grow: 1;
+        }
+        .item2 {
+            background-color: hotpink;
+            flex-grow: 1;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

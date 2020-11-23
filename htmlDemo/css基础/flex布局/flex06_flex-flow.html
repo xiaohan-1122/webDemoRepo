@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow</title>
+    <style>
+        /* 
+        flex-flow是 flex-direction || flex-wrap的简写，可以省略，顺序任意
+         */
+         .box {
+            width: 500px;
+            height: 200px;
+            background-color: goldenrod;
+
+            display: flex;                        
+            flex-flow: column wrap;
+         }
+         .item {
+            width: 100px;
+            /* height: 100px; */
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+            font-size: 30px;
+        }
+        .item2 {
+            background-color: hotpink;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

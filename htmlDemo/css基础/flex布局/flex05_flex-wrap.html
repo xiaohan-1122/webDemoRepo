@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap</title>
+    <style>
+        /* 
+        flex-wrap决定了flex container是单行还是多行
+        nowrap(默认)：单行,会压缩items大小
+        wrap：多行
+        wrap-reverse：多行(对比wrap，cross start与cross end相反)
+         */
+        .box {
+            width: 550px;
+            height: 400px;
+            background-color: goldenrod;
+
+            display: flex;
+
+            flex-wrap: wrap-reverse;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+        }
+        .item2 {
+            background-color: hotpink;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item1">item4</div>
+        <div class="item item2">item5</div>
+        <div class="item item3">item6</div>
+        <div class="item item1">item7</div>
+        <div class="item item2">item8</div>
+        <div class="item item3">item9</div>
+    </div>
+</body>
+</html>

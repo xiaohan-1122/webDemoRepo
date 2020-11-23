@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        /* 
+        order 决定了 flex items的排不顺序
+        可以设置任意整数（正整数、负整数、0），值越小就越排在前面，默认值是0
+         */
+         .box {
+            width: 550px;
+            height: 200px;
+            background-color: goldenrod;
+            margin: 0 auto;
+
+            display: flex;                        
+         }
+         .item {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+            font-size: 30px;
+            order: 0;
+        }
+        .item2 {
+            background-color: hotpink;
+            order: 100;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

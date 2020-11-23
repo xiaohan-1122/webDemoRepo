@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        /* 
+        align-items决定了 flex items在cross axis(交叉轴)上的对齐方式
+        normal：在弹性布局中，效果和stretch一样
+        stretch：在没有设置高度的情况下，当flex items在cross axis方向的size为auto时，会自动拉伸至填充flex container
+        flex-start：与cross start对齐
+        flex-end：与cross end对齐
+        center：居中对齐
+        baseline：与基准线对齐,第一行文本的基线
+        注：多行时，items最后一行比上一行少，没有对齐，可以增加个空白元素，使与上一行items个数相同
+         */
+        .box {
+            width: 500px;
+            height: 400px;
+            background-color: goldenrod;
+
+            display: flex;            
+            align-items: center;
+        }
+        .item {
+            width: 100px;
+            /* height: 100px; */
+            line-height: 100px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: green;
+            font-size: 30px;
+        }
+        .item2 {
+            background-color: hotpink;
+        }
+        .item3 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

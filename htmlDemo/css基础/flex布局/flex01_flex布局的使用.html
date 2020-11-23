@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局的使用</title>
+    <style>
+        /* 
+        认识flex布局：
+        开启了flex布局的元素叫flex container
+        flex container里面的直接子元素叫做flex items
+
+        开启flex布局方式:
+        设置display: flex; flex container以block-level形式存在
+        设置display: inline-flex; flex container以inline-level形式存在
+         */
+        .box {
+            /* display: flex; */
+            display: inline-flex;
+            width: 500px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <strong>strong元素</strong>
+</body>
+</html>
