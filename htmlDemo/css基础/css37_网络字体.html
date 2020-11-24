@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络字体</title>
+    <style>
+        /* 
+        font-face可以让网页支持网络字体（web font），不再局限于系统自带的字体
+        常见的字体种类：
+        TrueType字体：拓展名是.ttf
+        OpenType字体：拓展名是.ttf .otf，建立在TrueType字体之上
+        Embedded OpenType字体：拓展名是.eot，OpenType字体的压缩版
+        SVG字体：拓展名是.svg .svgz
+        web开放字体：拓展名是.woff，建立在TrueType字体之上
+
+        注意：并不是所有浏览器都支持以上字体，使用时要多测试。
+        字体下载：https://fonts.google.com
+         */
+        /* 每个font-face中只能写一种字体 */
+        @font-face {
+            /* 字体名称 */
+            font-family: "Nerko One";
+            /* 字体路径 */
+            src: url("./font/NerkoOne-Regular.ttf");
+            /* 一种字体的多个格式 */
+            /* src: url("./font/NerkoOne-Regular.ttf"), url("./font/iconfont.woff"); */
+        }
+        /* 设置字体 */
+        p {
+            font-family: "Nerko One";
+        }
+    </style>
+</head>
+<body>
+    <p>我是一个段落afsdfgfdf</p>
+</body>
+</html>

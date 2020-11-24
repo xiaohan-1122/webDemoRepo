@@ -1,0 +1,41 @@
+<!-- 
+设置文字大小的单位：
+1.px:像素
+2.em:相对于父元素字体的大小（2em:父元素字体*2）
+3.%：不同场景相对的不一样（在字体中，相对于父元素的字体）
+4.rem:相对于html的字体大小
+
+设置宽度的大小：
+1.px:像素
+2.em:自己有设置font-size，em相对于自己的font-size
+     自己没有设置font-size，em相对于父元素的font-size
+3.%：相对于父元素的宽度
+4.rem:相对于html的字体大小
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>rem单位的使用</title>
+      <style>
+           html {
+                font-size: 10px;
+           }
+           /* 根据屏幕大小缩放：js动态计算 */
+           /* 动态计算rem值：利用postcss-pxtorem */
+           .box {
+                /* 相对于根元素的字体大小 */
+               width: 10rem;
+               height: 10rem;
+               background-color: slateblue;
+
+               /* rem: root em 相对于HTML的字体大小*/
+               font-size: 2rem;
+           }
+      </style>
+ </head>
+ <body>
+     <div class="box">我是文本</div>
+ </body>
+ </html>

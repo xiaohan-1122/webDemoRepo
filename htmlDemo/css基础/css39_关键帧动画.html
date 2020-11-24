@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键帧动画</title>
+    <style>
+        /* 
+        关键帧动画使用@keyframes 来定义多个变化状态，并且使用animation-name来声明匹配：
+        1.使用@keyframes创建一个规则
+        2.@keyframes中使用百分比定义各个阶段的样式
+        3.听过animation将动画添加到属性上
+         */
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: hotpink;
+
+                /* transition: transform 1s ease; */
+            }
+            .box:hover {
+                /* 只有开始和结束两帧 */
+                /* transform: translate(0, 250px); */
+
+                animation: test1 2s linear;
+                /* animation: test1 2s linear infinite; */
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            }
+
+            @keyframes test1 {
+                from {
+                    /* 多个动画，用空格分隔 */
+                    transform: translate(0, 0) scale(1, 1);
+                }
+                25% {
+                    transform: translate(250px, 0);
+                }
+                50% {
+                    transform: translate(250px, 250px);
+                }
+                75% {
+                    transform: translate(0, 250px);
+                }
+                to {
+                    transform: translate(0, 0) scale(2,2);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

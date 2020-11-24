@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1606114848991'); /* IE9 */
+  src: url('iconfont.eot?t=1606114848991#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPEAAsAAAAAB/QAAAN1AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDXIMUATYCJAMMCwgABCAFhG0HNhvaBhHVmxnJfh44xsoxK+uVPral/FhRI+k9Bw/0bvoud1gCnYuwTlxD3WBi9gf0cypCAwTAxU/gYfGtOUcgJ0zUZEnOokdfyAOll2b0x73Tv/IA57MsxzE27W0TA4w77wIae3vABRKQN4zdRHkQyyEAndJqEh079xyIHQVoJwAxfcqkMdhTalRNssCOwFoyVFlEGhbsWrx2Fkjl3xdvqJ8dNCwS0LXvxE7jaftcPbdLM2QaThE44xkBbRRIoCZQIEaWmocgQ19NEt0Rq/poKwqBNpYzFIKzXal1pX88DYQVkOgEoKro1+C5wkwIeG73owHnPwqsgANYDxySSAXf2IaWV1e60+FoVH6ZM8GPMgOGKzFXWDzB0a7s3YVwCu/eMZpTTnHm7CksXGTtmmp4vZ4cXU/IMrNHbPObgcRcT3Bgwh7P3sTd5q4ZzuvXBws9B1zLW2SSN7HQhGxfRR3zatOsHWvWFtl5UAiP1zAmjjcSs2H9pUYu7jGz9IScEqV3b4Vwz6C77CqKmZWQU1hsvNLEOH6pFOsu1qrQZlvJjiX/Yi6fI7fstou4wp+Gu7jk+/j0Y5vT5DlP5xxU8SmjfWGrbSm2+LC4ntM3dWjSsUnDJg1KjHTlKw6nZFTJCm1xu0W7Z+7ZJ0bVGXgic2GBhWQXf25e97NqlToUzm54uGH0zOQSIeO9USvSHeWuFVQJGbsPlzfeFT6vJ3oVfmd8HJjPn29QXl++TizOvOC+vthafrSvb3mr31Ke0QCEyIKyLYSWv2TNX/gbpubOmT8qT8tvdkMBcOfRqrLcGqJor8V+gxYBP6ycygugdB7QSGWLqU0XgMSN7XXEo6MDvykVIL/7/aWFWieCwE6hGDRslAKJnYqo4uwhESwYNBTBip02oFNDl9EGBcxFIpQDqC5aAEFeB0EjjFyQ5HUOVaR7YKGwd2AlbxJ03Fe7Kbf22c2RsRbsoPmDbSkppJNNkHxD/Q41J3mc8kIerBPKrMgGr5iQx+gxfHQlokAxRbgIq2EIBD2Tw1YyI9If8lyVPShrKY42jhiqCdQBjT9gtUiiaHGxyX3+BmlvQY1r8jqsL4gNbOWglClaoFdxapV3LacMPrSKEApQGInARTCiAH0E9OWNHNQSGdPD0zvIpUKqrTibXxqfbwmgA91kmpBCMZ+hhDNijTgaAQAAAA==') format('woff2'),
+  url('iconfont.woff?t=1606114848991') format('woff'),
+  url('iconfont.ttf?t=1606114848991') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1606114848991#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e604";
+}
+
+.icon-home:before {
+  content: "\e608";
+}
+

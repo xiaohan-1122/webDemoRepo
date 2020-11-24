@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D动画</title>
+    <style>
+        /* 
+        js实现3d的库：three.js
+        */
+        body {
+            perspective: 1000px;
+        }
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* margin-top: 200px; */
+
+            transform-style: preserve-3d;
+            transform: rotateY(45deg);
+        }
+        .container .item{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+        }
+        .container .item1 {
+            background-color: chartreuse;
+            transform: translateZ(-60px);
+        }
+        .container .item2 {
+            background-color: aqua;
+            transform: translateZ(-120p);
+        }
+        .container .item3 {
+            background-color: green;
+            transform: translateZ(-180px);
+        }
+        .container .item4 {
+            background-color: gold;
+            transform: translateZ(-240px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+    </div>
+    
+</body>
+</html>
