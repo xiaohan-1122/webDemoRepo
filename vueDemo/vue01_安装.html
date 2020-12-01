@@ -20,6 +20,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-
+    <div id="app">{{message}}</div>
+    <script>
+        /*
+        * 创建vue对象时，传入了一些options:{}
+        * {}中包含了el属性：该属性决定了这个Vue对象挂载到哪一个元素上
+        * {}中包含了data属性：该属性中通常会存储一些数据
+        * */
+        // let:定义变量     const:定义常量
+        let app = new Vue({
+            el: '#app',
+            data: {
+                message: "啊啊啊啊"
+            }
+        })
+    </script>
 </body>
 </html>
