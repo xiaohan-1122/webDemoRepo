@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>绑定类名</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    .active {
+      color: red;
+    }
+    .bgColor {
+      background-color: darkorange;
+    }
+    .largeSize {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <!--
+  <div :class="{classA: isTrue }"></div>
+  <div :class="[classA, classB]"></div>
+  <div :class="[classA, { classB: isB, classC: isC }]">
+  -->
+<!--  对象语法 用的较多-->
+  <p v-bind:class="{'active': isActive, 'bgColor': this.isBg}">{{message}}</p>
+  <p v-bind:class="getClasses()">{{message}}</p>
+<!--  数组语法-->
+  <p v-bind:class="['largeSize', 'active']">{{message}}</p>
+  <p v-bind:class="['largeSize', {'active': isActive}]">{{message}}</p>
+</div>
+<script>
+  let app = new Vue({
+    el: "#app",
+    data: {
+      message: "hello",
+      isActive: true,
+      isBg: true
+    },
+    methods: {
+      getClasses: function () {
+        return {'active': this.isActive, 'bgColor': this.isBg}
+      }
+    }
+  })
+</script>
+</body>
+</html>

@@ -20,10 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue02_列表的展开.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue03_methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue02_vue实例传入的options.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue04_vue生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue05_v-once.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue06_v-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue07_v-text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue08_v-pre.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue09_v-cloak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue10_v-bind动态绑定class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue10_v-bind绑定属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue10_v-bind绑定样式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue01_安装.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue01_安装.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue02_列表的展开.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue02_v-for.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue03_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue03_methods.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +70,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Vue" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +88,9 @@
       <updated>1606442007682</updated>
       <workItem from="1606442008867" duration="210000" />
       <workItem from="1606785228597" duration="8208000" />
+      <workItem from="1606893673259" duration="5807000" />
+      <workItem from="1606900084590" duration="810000" />
+      <workItem from="1606959052321" duration="19794000" />
     </task>
     <servers />
   </component>
@@ -92,6 +110,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="926" y="161" key="SettingsEditor" timestamp="1606900215695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="926" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606900215695" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606960574068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1606960574068" />
+    <state x="775" y="276" key="run.anything.popup" timestamp="1606967083268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="276" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606967083268" />
     <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1606787687768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

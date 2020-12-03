@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-bind</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <!-- 绑定一个 attribute -->
+  <img v-bind:src="img_url" alt="">
+  <!-- 缩写 -->
+  <a :href="baidu_url">百度一下</a>
+  <!-- 内联字符串拼接 -->
+<!--  <img :src="'/path/to/images/' + fileName">-->
+</div>
+<script>
+  /*
+  * 给元素绑定数据，可以使用{{}} v-text v-html，想给元素的属性绑定数据，只能使用v-bind。
+  * v-bind用于绑定一个或多个属性值，或者向另一个组件传递props值
+  * 比如动态绑定a元素的href属性,动态绑定img元素的src属性,动态绑定一些类、样式
+  * 作用：动态绑定属性
+  * 缩写：:
+  * 预期：any (with argument) | Object (without argument)
+  * 参数：attrOrProp (optional)
+  * */
+  let app = new Vue({
+    el: "#app",
+    data: {
+      message: "hello",
+      img_url: 'https://i0.hdslb.com/bfs/face/aa9119ad08a5c6c546869d17be7847fe7debd123.jpg@140w_140h_1c.webp',
+      baidu_url: "https://www.baidu.com"
+    }
+  })
+</script>
+</body>
+</html>

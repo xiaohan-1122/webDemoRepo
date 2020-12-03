@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue生命周期</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<script>
+    const obj = {
+        name: "小白",
+        age: 12
+    }
+    let app = new Vue({
+        el: "#app",
+        data: obj,
+        methods: {
+            test1: function () {
+                
+            },
+            test2: function () {
+                
+            }
+        },
+        // 生命周期函数又叫钩子函数hook
+        beforeCreate: function () {
+            console.log("beforeCreate");
+        },
+        created: function () {
+            console.log("created");
+        },
+        mounted: function () {
+            console.log("mounted");
+        }
+    })
+</script>
+</body>
+</html>

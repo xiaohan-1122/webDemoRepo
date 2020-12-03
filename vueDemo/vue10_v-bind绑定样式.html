@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>绑定样式</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<!--
+<div :style="{ fontSize: size + 'px' }"></div>
+<div :style="[styleObjectA, styleObjectB]"></div>
+-->
+<div id="app">
+<!--  对象语法-->
+  <p :style="{color: 'green'}">{{message}}</p>
+  <p :style="{color: 'yellow', 'fond-size': '30px'}">{{message}}</p>
+  <p :style="{'color': 'aqua', 'fond-size': '20px'}">{{message}}</p>
+  <p :style="obj">v-bind绑定style，通过model中的对象</p>
+  <p :style="addStyle()">v-bind绑定style，通过model中的对象</p>
+
+<!--  数组语法-->
+  <p :style="[{'color': 'red'}, {'fond-size': '20px'}]">{{message}}</p>
+</div>
+<script>
+  let vue2 = new Vue({
+    el: '#app',
+    data: {
+      message: "hello",
+      obj: {
+        color: 'chocolate',
+        size: '40px'
+      }
+    },
+    methods: {
+      addStyle: function () {
+        return this.obj
+      }
+    }
+  })
+</script>
+</body>
+</html>

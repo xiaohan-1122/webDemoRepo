@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>其它指令</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="box1">
+  <p v-once>原始数据：{{ message1 }}</p>
+  <p>当前数据：{{ message1 }}</p>
+</div>
+<script>
+  // {{message}}这种写法叫做 Mustache
+  /* v-once:只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。*/
+  let vue1 = new Vue({
+    el: "#box1",
+    data: {
+      message1: "test111"
+    }
+  })
+  // 原始数据不会变化
+  vue1.message1 = '6666666'
+</script>
+</body>
+</html>

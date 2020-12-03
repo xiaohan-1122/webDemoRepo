@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-html</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  <h2>{{url}}</h2>
+  <h2 v-html="url"></h2>
+</div>
+<script>
+  /*
+  * 更新元素的 innerHTML。注意：内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译。
+  * */
+  let app = new Vue({
+    el: "#app",
+    data: {
+      url: "<a href='https://www.baidu.com'>百度一下</a>"
+    }
+  })
+</script>
+</body>
+</html>
