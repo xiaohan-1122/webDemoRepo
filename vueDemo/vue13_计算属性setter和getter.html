@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>setter和getter</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  <h2>全名是：{{fullName}}</h2>
+</div>
+<script>
+/* 每个计算属性都包含一个getter和一个setter方法（setter不常用）*/
+  let app = new Vue({
+    el: "#app",
+    data: {
+      firstName: "wang",
+      lastName: "xiaolan"
+    },
+    computed: {
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      }
+    }
+  })
+</script>
+</body>
+</html>

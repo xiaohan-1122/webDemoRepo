@@ -14,6 +14,9 @@
     * data:
     *   类型：Object | Function（组件中data必须是一个函数）
     *   作用：Vue实例对应的数据对象
+    * computed：
+    *   类型：{ [key: string]: Function | { get: Function, set: Function } }
+    *   计算属性的结果会被缓存，除非依赖的响应式 property 变化才会重新计算。注意，如果某个依赖 (比如非响应式 property) 在该实例范畴之外，则计算属性是不会被更新的。
     * methods：
     *   类型：{[key:string]:Function}
     *   作用：定义属于Vue的一些方法，可以在其他地方调用，也可以在指令中使用

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算属性</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+<!--  显示名字全称 中间空格隔开-->
+  <h2>{{firstName + ' ' + lastName}}</h2>
+  <h2>{{firstName}} {{lastName}}</h2>
+  <h2>{{getFullName()}}</h2>
+<!--  计算属性方式-->
+  <h2>{{fullName}}</h2>
+</div>
+<script>
+  let app = new Vue({
+    el: "#app",
+    data: {
+      firstName: "Li",
+      lastName: "xiaolong"
+    },
+    computed: {
+      fullName: function () {
+        return this.firstName + " " + this.lastName
+      }
+    },
+    methods: {
+      getFullName: function () {
+        return this.firstName + " " + this.lastName
+      }
+    }
+  })
+</script>
+</body>
+</html>

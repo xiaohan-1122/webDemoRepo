@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue02_vue实例传入的options.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue04_vue生命周期.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue05_v-once.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue06_v-html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue07_v-text.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue08_v-pre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue09_v-cloak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue10_v-bind动态绑定class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue10_v-bind绑定属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue10_v-bind绑定样式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue11_计算属性的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue12_计算属性的复杂使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue13_计算属性setter和getter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue02_列表的展开.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue02_v-for.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue03_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue03_methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue02_vue实例传入的options.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue02_vue实例传入的options.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +82,8 @@
       <workItem from="1606893673259" duration="5807000" />
       <workItem from="1606900084590" duration="810000" />
       <workItem from="1606959052321" duration="19794000" />
+      <workItem from="1607039787576" duration="4716000" />
+      <workItem from="1607060611566" duration="423000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算属性</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">总价格:{{totalPrice}}</div>
+<script>
+  let app = new Vue({
+    el: "#app",
+    data: {
+      books: [
+        {id: 110, name: '代码大全',price: 105},
+        {id: 111, name: '深入理解计算机原理', price: 98},
+        {id: 112, name: '现代操作系统', price: 87}
+      ]
+    },
+    computed: {
+      totalPrice: function () {
+        totalPrice = 0;
+        // for (let i = 0; i < this.books.length; i++){
+        //   totalPrice += this.books[i]['price']
+        // }
+        // ES6语法
+        // for (let i in this.books) {
+        //   totalPrice += this.books[i]['price']
+        // }
+        for (let book of this.books){
+          totalPrice += book['price']
+        }
+        return totalPrice
+      }
+    }
+  })
+
+  movies = ['海贼王', '名侦探柯南', '火影忍者']
+  for (let i = 0; i < movies.length; i++){
+    console.log(movies[i])
+  }
+  // ES6语法一
+  for (let i in movies){
+    console.log(movies[i])
+  }
+  // ES6语法二
+  for (let item of movies){
+    console.log(item)
+  }
+</script>
+</body>
+</html>
