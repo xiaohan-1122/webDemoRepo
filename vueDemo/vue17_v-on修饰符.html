@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-on修饰符</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<!--
+.stop - 阻止事件冒泡
+.prevent - 阻止默认事件
+.capture - 添加事件侦听器时使用 capture 模式。
+.self - 只当事件是从侦听器绑定的元素本身触发时才触发回调。
+.{keyCode | keyAlias} - 只当事件是从特定键触发时才触发回调。
+.native - 监听组件根元素的原生事件。
+.once - 只触发一次回调。
+.left - (2.2.0) 只当点击鼠标左键时触发。
+.right - (2.2.0) 只当点击鼠标右键时触发。
+.middle - (2.2.0) 只当点击鼠标中键时触发。
+.passive - (2.3.0) 以 { passive: true } 模式添加侦听器
+-->
+<div id="app">
+<!--  .stop - 阻止事件冒泡-->
+  <div @click="divClick">aaaaaaaaa
+    <button @click.stop="btnClick">按钮</button>
+  </div>
+
+<!--  .prevent - 阻止默认事件-->
+  <form action="...">
+    <input type="submit" value="提交" @click.prevent="submitClick">
+  </form>
+
+<!-- .{keyCode | keyAlias} 监听键盘某个键帽 -->
+  <input type="text" @keyup.enter="keyup">
+
+<!--  .once - 只触发一次回调-->
+  <button @click.once="btn2Click">按钮2</button>
+</div>
+<script>
+  let app = new Vue({
+    el: '#app',
+    data: {
+
+    },
+    methods: {
+      divClick() {
+        console.log('divClick');
+      },
+      btnClick() {
+        console.log('btnClick');
+      },
+      submitClick() {
+        console.log('submitClick');
+      },
+      keyup() {
+        console.log('keyup');
+      },
+      btn2Click() {
+        console.log('btn2Click');
+      }
+    }
+  })
+</script>
+</body>
+</html>

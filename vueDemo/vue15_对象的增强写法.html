@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>对象的增强写法</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<script>
+  const name = 'xiaolan';
+  const age = 17;
+
+  //  ES5对象写法
+  const obj1 = {
+    name: name,
+    age: age,
+    run: function () {
+      console.log('run')
+    }
+  }
+  console.log(obj1)
+//  ES6对象写法
+  const obj2 = {
+    name,
+    age,
+    run() {
+      console.log('run')
+    }
+  }
+  console.log(obj2)
+</script>
+</body>
+</html>

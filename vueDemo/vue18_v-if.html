@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-if</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<!--  v-if-->
+  <div v-if='isShow'>
+    <h2>abc</h2>
+    <p>abc</p>
+    <div>abc</div>
+  </div>
+<!--  v-else
+v-else 前面必须有 *v-if* 或者 *v-else-if* ;
+v-if 和 v-else 中间不能插入其它内容；
+-->
+  <h2 v-else>isShow为false时，显示</h2>
+
+  <p v-if="score>=90">优秀</p>
+  <p v-else-if="score>=80">良好</p>
+  <p v-else-if="score>=60">及格</p>
+  <p v-else>不及格</p>
+</div>
+<script>
+  /*
+  * 如果取值是true就渲染元素，否则就不渲染元素。（如果条件不满足，不会创建这个元素）
+  * */
+  let app = new Vue({
+    el: '#app',
+    data: {
+     isShow: true,
+      score: 88
+    }
+  })
+</script>
+</body>
+</html>

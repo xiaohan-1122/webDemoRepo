@@ -19,8 +19,15 @@
       lastName: "xiaolan"
     },
     computed: {
-      fullName: function () {
-        return this.firstName + " " + this.lastName;
+      fullName: {
+        set: function (name) {
+          const names = name.split(' ');
+          this.firstName = names.length > 0 ? names[0] : '';
+          this.lastName = names.length > 1 ? names[1] : '';
+        },
+        get: function () {
+          return this.firstName + ' ' + this.lastName;
+        }
       }
     }
   })
