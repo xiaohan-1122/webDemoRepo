@@ -19,17 +19,15 @@
     el: "#list",
     data: {
       movies: ["海贼王", "进击的巨人", "火影忍者", "银魂"],
-      isActive: true,
-      index: null
+      currentIndex: 0
     },
     methods: {
       getIndex: function (index) {
-        this.index = index
+        this.currentIndex = index
       },
       addClass: function (index) {
-        if (this.index === index)
-          return {'active': this.isActive}
-        return {'active': !this.isActive}
+        if (this.currentIndex === index)
+          return 'active';
       }
     }
   })

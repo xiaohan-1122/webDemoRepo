@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-show</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<div id="app">
+  <!--
+  如果取值是true就渲染元素，否则就不渲染元素。
+  v-if 和 v-show 区别：
+    v-if: 只要取值是false，就不会创建元素；
+    v-show: 取值为false也会创建元素，会设置元素的display为none；
+  一般来说，v-if 有更高的切换开销，而 v-show 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 v-show 较好；如果在运行时条件很少改变，则使用 v-if 较好。
+  -->
+  <h2 v-if="isShow">{{message}}</h2>
+  <h2 v-show="isShow">{{message}}</h2>
+</div>
+<body>
+<script>
+  let app = new Vue({
+    el: '#app',
+    data: {
+      message: 'hello',
+      isShow: false
+    }
+  })
+</script>
+</body>
+</html>

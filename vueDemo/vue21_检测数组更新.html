@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>检测数组更新</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<!--
+因为Vue是响应式的，所有当数据发生变化时，Vue会自动检测数据变化，视图会发生对应的更新。
+Vue中包含了一组观察数组编译的方法，使用它们改变数组也会触发视图的更新
+push()、pop()、shift()、unshift()、splice()、sort()、reverse()
+-->
+<div id="app">
+  <ul>
+    <li v-for="item in letters">{{item}}</li>
+  </ul>
+  <button @click="btnClick">按钮</button>
+</div>
+<script>
+  let app = new Vue({
+    el: '#app',
+    data: {
+      letters: ['a', 'b', 'c', 'd']
+    },
+    methods: {
+      btnClick() {
+        /* 可以做到响应式的方法（调用方法后，界面自动刷新） */
+        // this.letters.push('aaa');  // 在数组最后新增元素
+        // this.letters.pop();    // 删除数组最后一个元素
+        // this.letters.shift();   // 删除数组第一个元素
+        // this.letters.unshift('cccc');   // 在数组最前面添加元素
+        // 作用：删除、插入、替换元素,参数：1.从第几个元素开始 2.删除或替换几个元素(插入元素时传0) 3. 要替换的元素
+        // this.letters.splice(2, 1, 'mmm')
+        this.letters.reverse(); // 数组反转
+
+      //  注意：通过索引值修改数组元素 不是响应式
+      //   this.letters[0] = 'bbbbb'
+      }
+    }
+  })
+</script>
+</body>
+</html>

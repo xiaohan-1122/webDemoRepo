@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue14_const.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue15_对象的增强写法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue16_v-on基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue17_v-on修饰符.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue18_v-if.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/条件渲染案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue19_v-show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue20_v-for基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue21_检测数组更新.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/购物车案例/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/购物车案例/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/购物车案例/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue03_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue03_methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue05_v-once.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue05_v-once.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue13_计算属性setter和getter.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue13_计算属性setter和getter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue02_v-for.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,6 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,6 +95,9 @@
       <workItem from="1607388217775" duration="2047000" />
       <workItem from="1607391076761" duration="6456000" />
       <workItem from="1607406390934" duration="8635000" />
+      <workItem from="1607417473523" duration="290000" />
+      <workItem from="1607418065936" duration="1802000" />
+      <workItem from="1607473689010" duration="7935000" />
     </task>
     <servers />
   </component>
@@ -128,9 +133,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="276" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607413204138" />
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607417320593">
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607473931438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607417320593" />
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607473931438" />
   </component>
 </project>
