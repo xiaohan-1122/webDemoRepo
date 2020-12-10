@@ -20,15 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue19_v-show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue20_v-for基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue21_检测数组更新.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/购物车案例/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/购物车案例/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/购物车案例/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue22_过滤器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue23_js高阶函数.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue02_v-for.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/动态绑定class&amp;v-for练习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/购物车案例/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/购物车案例/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/购物车案例/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,7 +65,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Vue" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -98,6 +95,8 @@
       <workItem from="1607417473523" duration="290000" />
       <workItem from="1607418065936" duration="1802000" />
       <workItem from="1607473689010" duration="7935000" />
+      <workItem from="1607559843692" duration="4994000" />
+      <workItem from="1607569744382" duration="10963000" />
     </task>
     <servers />
   </component>
@@ -121,10 +120,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607390260732" />
-    <state x="272" y="209" key="SettingsEditor" timestamp="1607323248941">
+    <state x="93" y="200" key="SettingsEditor" timestamp="1607560736569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="272" y="209" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607323248941" />
+    <state x="93" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607560736569" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1606960574068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -133,9 +132,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="276" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607413204138" />
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607473931438">
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607590460002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607473931438" />
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607590460002" />
   </component>
 </project>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>过滤器</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  <h2>保留两位小数：{{price | showPrice}}</h2>
+</div>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      price: 35
+    },
+    filters: {
+      showPrice(price) {
+        return '￥' + price.toFixed(2);
+      }
+    }
+  })
+</script>
+</body>
+</html>

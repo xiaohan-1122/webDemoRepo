@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>高阶函数</title>
+<!--  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+
+</head>
+<body>
+<script>
+  // 取出小于100的数字
+  list = [10, 4, 102, 76, 345];
+  /*
+  * filter中的回调函数必须返回一个布尔值
+  * true:函数内部会自动将这次回调的item加入到新的数组中
+  * false：函数内部会过滤掉这次的item
+  * */
+  let new_list = list.filter(function (item) {
+    if (item <= 100){
+      return true;
+    }
+    return false;
+  })
+  console.log(new_list);
+
+  // 所有数字*2
+  let new_list2 = list.map(function (item) {
+    return item * 2;
+  })
+  console.log(new_list2); // [20, 8, 204, 152, 690]
+
+//  对数组中所有内容进行汇总
+  total = list.reduce(function (preValue, item) {
+    return preValue + item;
+  }, 0)
+  console.log(total);   // 537
+</script>
+</body>
+</html>
