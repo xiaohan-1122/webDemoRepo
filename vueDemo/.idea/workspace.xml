@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue22_过滤器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue23_js高阶函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue24_v-model双向绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue24_v-model结合checkbox使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue24_v-model结合radio使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue25_v-model修饰符.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/购物车案例/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/购物车案例/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/购物车案例/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/购物车案例/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue23_js高阶函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue23_js高阶函数.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,6 +70,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo\images" />
     </key>
@@ -96,7 +100,9 @@
       <workItem from="1607418065936" duration="1802000" />
       <workItem from="1607473689010" duration="7935000" />
       <workItem from="1607559843692" duration="4994000" />
-      <workItem from="1607569744382" duration="10963000" />
+      <workItem from="1607569744382" duration="11356000" />
+      <workItem from="1607592572654" duration="124000" />
+      <workItem from="1607648583781" duration="12062000" />
     </task>
     <servers />
   </component>
