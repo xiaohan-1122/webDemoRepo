@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue24_v-model双向绑定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue24_v-model结合checkbox使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue24_v-model结合radio使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue25_v-model修饰符.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/01_组件化基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/02_全局组件和局部组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/03_父组件和子组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/04_注册组件语法糖写法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/05_组件模板抽离写法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/06_父子组件通信-父传子props.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue23_js高阶函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue23_js高阶函数.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +71,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo\vue基础" />
+      <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ADMIN\Desktop\gitRepository\webDemoRepo\vueDemo\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,6 +105,11 @@
       <workItem from="1607569744382" duration="11356000" />
       <workItem from="1607592572654" duration="124000" />
       <workItem from="1607648583781" duration="12062000" />
+      <workItem from="1607677881532" duration="14000" />
+      <workItem from="1607908248651" duration="1278000" />
+      <workItem from="1607927863501" duration="786000" />
+      <workItem from="1607930432669" duration="5568000" />
+      <workItem from="1607994646116" duration="2505000" />
     </task>
     <servers />
   </component>
@@ -138,9 +145,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="276" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607413204138" />
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607590460002">
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607935702964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607590460002" />
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607935702964" />
   </component>
 </project>
