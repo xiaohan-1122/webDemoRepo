@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>子传父</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+  <my_cpn @item-click="in_cpn_click"></my_cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <button v-for="item in categories" @click="btnClick(item)">{{item.name}}</button>
+  </div>
+</template>
+
+<script>
+  // 子组件
+  const my_cpn = {
+    template: '#cpn',
+    data() {
+      return {
+        categories: [
+          {id: 1, name: '热门推荐'},
+          {id: 2, name: '手机数码'},
+          {id: 3, name: '美妆护肤'}
+        ]
+      }
+    },
+    methods: {
+      btnClick(item) {
+        console.log(item.name + '被点击');
+        // 告诉父组件被点击的是哪一个item
+        // 发射事件
+        this.$emit('item-click', item)
+      }
+    }
+  }
+
+  // 父组件
+  const app = new Vue({
+    el: '#app',
+    components: {
+      my_cpn
+    },
+    methods: {
+      in_cpn_click(item) {
+        console.log('子组件中的' + item.name + '被点击');
+      }
+    }
+  })
+</script>
+</body>
+</html>

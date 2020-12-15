@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父子组件通信-父传子props</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <my_cpn v-bind:cmovies="movies" :msg="message"></my_cpn>
+</div>
+<template id="cpn">
+  <ul>
+    <li v-for="item in cmovies">{{item}}</li>
+  </ul>
+  <h3>{{msg}}</h3>
+</template>
+<script>
+  /*
+  * 父传子：props
+  * 在组件中使用props来声明需要从父级接收的数据
+  * props的值有两种方式：
+  *   方式一：字符串数组，数组中的字符串就是传递时的名称(很少用)
+  *   方式二：对象，对象可以设置传递时的类型，也可以设置默认值等
+  * */
+  const my_cpn = {
+    template: '#cpn',
+    // props: ['cmovies', 'msg']
+    props: {
+      // 1.类型限制
+      // cmovies: Array,
+      // msg: String
+      // 2.提供默认值
+      msg: {
+        type:String,
+        default: 'hi',
+        // 必传值（要使用my_cpn组件，必须传msg）
+        required: true
+      },
+      cmovies: {
+        type: Array,
+        default() {
+          return []
+        }
+      }
+    }
+  }
+  const app = new Vue({
+    el: '#app',
+    data: {
+      movies: ['送你一朵小红花', '金刚川', '少年的你'],
+      message: 'hello'
+    },
+    components: {
+      my_cpn
+    }
+  })
+
+//  传值方式：
+  function Person(name){
+    this.name = name
+  }
+  Vue.component('my-conmponent', {
+    props: {
+      // 基础类型检查（null匹配任何类型）
+      itemA: Number,
+      // 多个可能的类型
+      itemB: [String, Number],
+      // 必须传的
+      itemC: {
+        type: String,
+        required: true
+      },
+      // 有默认值的
+      itemD: {
+        type: String,
+        default: 'ABC'
+      },
+      // 有默认值的数组
+      itemE: {
+        type: Array,
+        default() {
+          return [];
+        }
+      },
+      // 有默认值的对象
+      itemF: {
+        type: Object,
+        default() {
+          return {message: 'hello'}
+        }
+      },
+      // 自定义验证函数
+      itemG: {
+        validator(value) {
+          return ['success','warning','danger'].indexOf(value) !== -1
+        }
+      },
+      // 验证自定义类型
+      itemH: Preson
+    }
+  })
+</script>
+</body>
+</html>

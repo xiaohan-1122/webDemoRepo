@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f84f0d98-9aa8-422f-b513-25258884054b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/01_组件化基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/02_全局组件和局部组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/03_父组件和子组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/04_注册组件语法糖写法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/05_组件模板抽离写法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue26_组件化/06_父子组件通信-父传子props.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/06_组件中的data和方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/08_父传子props中的驼峰标识.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue26_组件化/09_子传父.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue26_组件化/06_父子组件通信-父传子props.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue26_组件化/07_父子组件通信-父传子props.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1kqxd2VOtvsD9Rj1QYBvIodeZNR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,7 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -110,6 +114,7 @@
       <workItem from="1607927863501" duration="786000" />
       <workItem from="1607930432669" duration="5568000" />
       <workItem from="1607994646116" duration="2505000" />
+      <workItem from="1608004467417" duration="12499000" />
     </task>
     <servers />
   </component>
@@ -133,10 +138,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607390260732" />
-    <state x="93" y="200" key="SettingsEditor" timestamp="1607560736569">
+    <state x="93" y="200" key="SettingsEditor" timestamp="1608013575209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="93" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607560736569" />
+    <state x="93" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608013575209" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1606960574068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -145,9 +150,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="276" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607413204138" />
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1607935702964">
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1608019607693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607935702964" />
+    <state x="1114" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608019607693" />
   </component>
 </project>
