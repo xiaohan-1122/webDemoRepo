@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>具名插槽</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- 替换没有name的slot -->
+    <cpn><span>span</span></cpn>
+    <cpn>
+      <template v-slot:left>
+        <span>替换左边slot</span>
+      </template>
+      <template v-slot:right>
+        <span>替换右边内容</span>
+      </template>
+    </cpn>
+  </div>
+
+  <template id="cpn">
+    <div>
+      <h2>组件标题</h2>
+      <p>组件内容</p>
+      <slot name="left">左边</slot>
+      <slot name="center">中间</slot>
+      <slot name="right">右边</slot>
+      <slot></slot>
+    </div>
+  </template>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      components: {
+        cpn: {
+          template: '#cpn'
+        }
+      }
+    })
+  </script>
+</body>
+</html>
