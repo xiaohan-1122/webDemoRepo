@@ -9,6 +9,8 @@
 <body>
   <div id="app">
     <cpn></cpn>
+    <!-- refs方式需要在使用组件时，添加ref属性 -->
+    <cpn ref="cpn2"></cpn>
     <button @click="btnClick()">按钮</button>
   </div>
 
@@ -16,6 +18,7 @@
     <div>我是子组件</div>
   </template>
   <script>
+    
     const app = new Vue({
       el: '#app',
       data: {
@@ -23,12 +26,23 @@
       },
       methods: {
         btnClick() {
-          console.log(this.$children);
+          // $children较少用，一般用refs
+          // console.log(this.$children);
+          // this.$children[0].showMessage()
+          // console.log(this.$children[0].name)
+
+          console.log(this.$refs.cpn2.name);
+          this.$refs.cpn2.showMessage();
         }
       },
       components: {
         cpn: {
           template: '#cpn',
+          data() {
+            return {
+              name: 'Naruto'
+            }
+          },
           methods: {
             showMessage() {
               console.log('showMessage');
